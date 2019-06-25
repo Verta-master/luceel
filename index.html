@@ -4,22 +4,540 @@
   <meta charset="UTF-8">
   <meta name="robots" content="noindex">
   <meta  name="viewport" content="width=device-width,initial-scale=1">
-  <title>Title</title>
+  <title>Интернет-магазин «У Люсиль» - наборы для вышивания, товары для рукоделия и творчества.</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
   <header class="header">
-    
+    <div class="header__top">
+      <div class="wrapper header__wrap">
+        <nav class="menu">
+          <button type="button" class="menu__btn"></button>
+          <ul class="menu__list">
+            <li class="menu__item menu__item--active">
+              <a href="#" class="menu__link">Главная</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Новости</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Статьи и схемы</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Отзывы</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Бонусы</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Пункты самовывоза</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Как купить</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Контакты | Написать нам</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Галерея</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__user">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="#">Вход</a>
+            </li>
+            <li class="header__item">
+              <a href="#">Регистрация</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper header__main">
+      <div class="logo">
+        <img src="img/images/logo.png" alt="Logo">
+      </div>
+      <div class="header__info">
+        <p><strong>ТОВАРЫ ДЛЯ ВЫШИВАНИЯ И ТВОРЧЕСТВА</strong>Актуальное наличие товара на сайте. Доставка по Москве и Санкт-Петербургу. Самовывозы в 330 городах России. Отправка почтой по всему миру.</p>
+        <ul class="social">
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <img src="img/icons/bt-vk.png" alt="У Люсиль в ВК">
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <img src="img/icons/bt-instagram.png" alt="У Люсиль в Инстаграм">
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <img src="img/icons/bt-facebook.png" alt="У Люсиль в Фейсбук">
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <img src="img/icons/bt-odnkl.png" alt="У Люсиль в Одноклассниках">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="header__block">
+        <div class="header__phones">
+          <a href="tel:+74951443125" class="header__link header__link--phone">+7 495 144-3125</a>
+          <a href="tel:+79258835521" class="header__link header__link--mobile">+7 925 883-5521</a>
+        </div>
+        <div class="header__place">
+          <span>(пн-пт 10-17)</span>
+          <a href="#" class="header__city">Москва</a>
+        </div>
+        <form action="#" class="search">
+          <input type="text" class="search__input" placeholder="Введите название товара">
+          <button type="submit" class="search__btn">Найти</button>
+        </form>
+      </div>
+      <div class="header__cart">
+        <div class="title">Моя корзина</div>
+        <div class="header__count">1 товаров, 223 р.</div>
+        <a href="#" class="btn btn--brown header__click">Купить в один клик</a>
+        <a href="#" class="btn header__buy">Моя корзина</a>
+      </div>
+    </div>
   </header>
   
   <main>
+    <div class="wrapper wrapper--columns">
+      <!--   Left sidebar   -->
+      <aside class="sidebar">
+        <nav class="sidebar__menu">
+          <button type="button" class="sidebar__title">Каталог</button>
+          <ul class="sidebar__list">
+            <li class="sidebar__item">
+              <a href="#">Наборы для вышивания</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#">Буклеты (схемы)</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#">Канва и основы для вышивания</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#">Мулине (нити для вышивания)</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#">Пяльцы, рамы, станки</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#">Инструменты для вышивания и шитья</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#">Бисер, пуговицы, декор</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#">Вязание</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#">Пэчворк, шитье, игрушки</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#">Творчество</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#">РАСПРОДАЖА</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#">Подарочные сертификаты</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#">Тематические подборки</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#">Снято с производства</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#">Готовые изделия</a>
+            </li>
+          </ul>
+        </nav>
+        
+        <div class="sidebar__tags">
+          <div class="sidebar__block">
+            <p class="sidebar__tag-title">Техника работы</p>
+            <a href="#">аппликация</a>
+            <a href="#">барджелло/баргелло</a>
+            <a href="#">бисероплетение</a>
+            <a href="#">болгарский крест</a>
+            <a href="#">валяние</a>
+          </div>
+          <div class="sidebar__block">
+            <p class="sidebar__tag-title">Назначение</p>
+            <a href="#">готовые изделия</a>
+            <a href="#">для кухни</a>
+            <a href="#">для начинающих</a>
+            <a href="#">игольницы и бискорню</a>
+            <a href="#">игрушки</a>
+          </div>
+          <div class="sidebar__block">
+            <p class="sidebar__tag-title">Сюжеты</p>
+            <a href="#">2019 год - год свиньи</a>
+            <a href="#">Riolis premium</a>
+            <a href="#">Rto vintage</a>
+            <a href="#">Tatty Teddy</a>
+            <a href="#">ангелы</a>
+          </div>
+          <div class="sidebar__block">
+            <p class="sidebar__tag-title">Производитель</p>
+            <a href="#">ADELIA</a>
+            <a href="#">Anchor</a>
+            <a href="#">Blend</a>
+            <a href="#">Blumenthal Lansing</a>
+            <a href="#">Bothy Threads</a>
+          </div>
+        </div>
+      </aside>
+      
+      <!--   Content   -->
+      <div class="content">
+        <h1 class="title">Интернет-магазин «У Люсиль» - наборы для вышивания, товары для рукоделия и творчества</h1>
+        <div class="content-text">
+          <p>Интернет-магазин «У Люсиль» предлагает Вашему вниманию товары для рукоделия и творчества. У нас в ассортименте Вы найдете и сможете купить наборы для вышивания различных фирм, в том числе таких широко известных и пользующихся спросом российских и зарубежных производителей как <a href="#">РТО</a>, <a href="#">Риолис</a>, <a href="#">Мария Искусница</a>, М.П.Студия, Матрёнин Посад, Алиса, Чудесная игла, Овен, Сделай своими руками, Panna (Панна), Mill Hill (Милл Хилл), Lanarte (Ланарте), NeoCraft (НеоКрафт). Представлены самые разнообразные техники (вышивка крестом, бисером, гладью и другими стежками) и сюжеты на любой вкус.</p>
+        </div>
+        
+        <section class="catalog">
+          <p class="title">Новинки <a href="#">Все новинки</a></p>
+          <ul class="catalog__list">
+            <li class="catalog__item">
+              <a href="#" class="catalog__link">
+                <figure class="catalog__img">
+                  <img src="img/images/img-1.jpg" alt="Тропинка к реке">
+                </figure>
+                <span class="catalog__label catalog__label--hidden"></span>
+                <div class="catalog__info">
+                  <p class="catalog__title">Тропинка к реке (канва 40*30 см с нанесенным рисунком-схемой)</p>
+                  <p class="catalog__price"><span class="catalog__sale"></span>196 р.</p>
+                </div>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a href="#" class="catalog__link">
+                <figure class="catalog__img">
+                  <img src="img/images/img-2.jpg" alt="№0230 ОТБЕЛКА">
+                </figure>
+                <span class="catalog__label catalog__label--hidden"></span>
+                <div class="catalog__info">
+                  <p class="catalog__title">№0230 ОТБЕЛКА (мериносовая тонкая шерсть для валяния 50 г)</p>
+                  <p class="catalog__price"><span class="catalog__sale"></span>153 р.</p>
+                </div>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a href="#" class="catalog__link">
+                <figure class="catalog__img">
+                  <img src="img/images/img-3.jpg" alt="Панно/подушка">
+                </figure>
+                <span class="catalog__label catalog__label--hidden"></span>
+                <div class="catalog__info">
+                  <p class="catalog__title">Панно/подушка "Совуля красотуля"</p>
+                  <p class="catalog__price"><span class="catalog__sale"></span>1 226 р.</p>
+                </div>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a href="#" class="catalog__link">
+                <figure class="catalog__img">
+                  <img src="img/images/img-4.jpg" alt="№0100 т. синий">
+                </figure>
+                <span class="catalog__label catalog__label--hidden"></span>
+                <div class="catalog__info">
+                  <p class="catalog__title">№0100 т. синий (мериносовая тонкая шерсть для валяния 50 г)</p>
+                  <p class="catalog__price"><span class="catalog__sale"></span>153 р.</p>
+                </div>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a href="#" class="catalog__link">
+                <figure class="catalog__img">
+                  <img src="img/images/img-5.jpg" alt="Питахайя">
+                </figure>
+                <span class="catalog__label catalog__label--hidden"></span>
+                <div class="catalog__info">
+                  <p class="catalog__title">Питахайя</p>
+                  <p class="catalog__price"><span class="catalog__sale"></span>518 р.</p>
+                </div>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a href="#" class="catalog__link">
+                <figure class="catalog__img">
+                  <img src="img/images/img-6.jpg" alt="Морские жители. Магниты">
+                </figure>
+                <span class="catalog__label catalog__label--hidden"></span>
+                <div class="catalog__info">
+                  <p class="catalog__title">Морские жители. Магниты</p>
+                  <p class="catalog__price"><span class="catalog__sale"></span>328 р.</p>
+                </div>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a href="#" class="catalog__link">
+                <figure class="catalog__img">
+                  <img src="img/images/img-7.jpg" alt="Мишки с сердечками">
+                </figure>
+                <span class="catalog__label catalog__label--hidden"></span>
+                <div class="catalog__info">
+                  <p class="catalog__title">Мишки с сердечками (Мишки-4) (игольницы магнитные "Березка" 1106-1108-1109)</p>
+                  <p class="catalog__price"><span class="catalog__sale"></span>354 р.</p>
+                </div>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a href="#" class="catalog__link">
+                <figure class="catalog__img">
+                  <img src="img/images/img-8.jpg" alt="Кошка с котятами">
+                </figure>
+                <span class="catalog__label catalog__label--hidden"></span>
+                <div class="catalog__info">
+                  <p class="catalog__title">Кошка с котятами</p>
+                  <p class="catalog__price"><span class="catalog__sale"></span>637 р.</p>
+                </div>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a href="#" class="catalog__link">
+                <figure class="catalog__img">
+                  <img src="img/images/img-9.jpg" alt="417-4205">
+                </figure>
+                <span class="catalog__label catalog__label--hidden"></span>
+                <div class="catalog__info">
+                  <p class="catalog__title">417-4205</p>
+                  <p class="catalog__price"><span class="catalog__sale"></span>77 р.</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </section>
+        
+        <section class="catalog">
+          <p class="title">Распродажа <a href="#">Все товары</a></p>
+          <ul class="catalog__list">
+            <li class="catalog__item">
+              <a href="#" class="catalog__link">
+                <figure class="catalog__img">
+                  <img src="img/images/img-10.jpg" alt="Наклейки Вишня">
+                </figure>
+                <span class="catalog__label">-29%</span>
+                <div class="catalog__info">
+                  <p class="catalog__title">Наклейки "Вишня"</p>
+                  <p class="catalog__price"><span class="catalog__sale">51</span>36 р.</p>
+                </div>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a href="#" class="catalog__link">
+                <figure class="catalog__img">
+                  <img src="img/images/img-11.jpg" alt="Подушка">
+                </figure>
+                <span class="catalog__label">-18%</span>
+                <div class="catalog__info">
+                  <p class="catalog__title">9373 Подушка</p>
+                  <p class="catalog__price"><span class="catalog__sale">1341</span>1 106 р.</p>
+                </div>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a href="#" class="catalog__link">
+                <figure class="catalog__img">
+                  <img src="img/images/img-12.jpg" alt="Подарочный пакет">
+                </figure>
+                <span class="catalog__label">-50%</span>
+                <div class="catalog__info">
+                  <p class="catalog__title">Подарочный пакет 42х31х12 см "С Новым годом!"</p>
+                  <p class="catalog__price"><span class="catalog__sale">117</span>59 р.</p>
+                </div>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a href="#" class="catalog__link">
+                <figure class="catalog__img">
+                  <img src="img/images/img-13.jpg" alt="Звездный Санта (Star Santa)">
+                </figure>
+                <span class="catalog__label">-30%</span>
+                <div class="catalog__info">
+                  <p class="catalog__title">Звездный Санта (Star Santa)</p>
+                  <p class="catalog__price"><span class="catalog__sale">697</span>488 р.</p>
+                </div>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a href="#" class="catalog__link">
+                <figure class="catalog__img">
+                  <img src="img/images/img-14.jpg" alt="Подвеска">
+                </figure>
+                <span class="catalog__label">-25%</span>
+                <div class="catalog__info">
+                  <p class="catalog__title">Подвеска "Калавера Роза" (Rosa)</p>
+                  <p class="catalog__price"><span class="catalog__sale">658</span>494 р.</p>
+                </div>
+              </a>
+            </li>
+            <li class="catalog__item">
+              <a href="#" class="catalog__link">
+                <figure class="catalog__img">
+                  <img src="img/images/img-15.jpg" alt="Дятел">
+                </figure>
+                <span class="catalog__label">-25%</span>
+                <div class="catalog__info">
+                  <p class="catalog__title">Дятел</p>
+                  <p class="catalog__price"><span class="catalog__sale">549</span>412 р.</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
     
+    <section class="news">
+      <div class="wrapper">
+        <p class="title">Новости<a href="#">Все новости</a></p>
+        <ul class="news__title">
+          <li class="news__item">
+            <figure class="news__img">
+              <img src="img/images/news-1.jpg" alt="инструменты Хемлайн">
+            </figure>
+            <div class="news__info">
+              <time datetime="2019-06-23">23 Июня 2019</time>
+              <a href="#">Новые магниты Березка и карандаши и другие инструменты Хемлайн</a>
+            </div>
+          </li>
+          <li class="news__item">
+            <figure class="news__img">
+              <img src="img/images/news-2.jpg" alt="Предварительный заказ на последние новинки М.П.Студия - со скидкой 15%!">
+            </figure>
+            <div class="news__info">
+              <time datetime="2019-06-20">20 Июня 2019</time>
+              <a href="#">Предварительный заказ на последние новинки М.П.Студия - со скидкой 15%!</a>
+            </div>
+          </li>
+          <li class="news__item">
+            <figure class="news__img">
+              <img src="img/images/news-3.jpg" alt="Продолжаем традиционные летние распродажи: Марья Искусница со скидкой 16-43%!">
+            </figure>
+            <div class="news__info">
+              <time datetime="2019-06-18">18 Июня 2019</time>
+              <a href="#">Продолжаем традиционные летние распродажи: Марья Искусница со скидкой 16-43%!</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    
+    <section class="catalog catalog--recent">
+      <div class="wrapper">
+        <p class="title">Товары недавно смотрели</p>
+        <ul class="catalog__list">
+          <li class="catalog__item">
+            <a href="#" class="catalog__link">
+              <figure class="catalog__img">
+                <img src="img/images/recent-1.jpg" alt="Pachyli Bag Рюкзак Адара серо-замшевый">
+              </figure>
+              <span class="catalog__label catalog__label--hidden"></span>
+              <div class="catalog__info">
+                <p class="catalog__title">Pachyli Bag Рюкзак Адара серо-замшевый</p>
+                <p class="catalog__price"><span class="catalog__sale">1889</span>1 227 р.</p>
+              </div>
+            </a>
+          </li>
+          <li class="catalog__item">
+            <a href="#" class="catalog__link">
+              <figure class="catalog__img">
+                <img src="img/images/recent-2.jpg" alt="Pachyli Bag Рюкзак Адара серо-синий">
+              </figure>
+              <span class="catalog__label catalog__label--hidden"></span>
+              <div class="catalog__info">
+                <p class="catalog__title">Pachyli Bag Рюкзак Адара серо-синий</p>
+                <p class="catalog__price"><span class="catalog__sale">1889</span>1 227 р.</p>
+              </div>
+            </a>
+          </li>
+          <li class="catalog__item">
+            <a href="#" class="catalog__link">
+              <figure class="catalog__img">
+                <img src="img/images/recent-3.jpg" alt="Pachyli Bag Рюкзак Альфард черный">
+              </figure>
+              <span class="catalog__label catalog__label--hidden"></span>
+              <div class="catalog__info">
+                <p class="catalog__title">Pachyli Bag Рюкзак Альфард черный</p>
+                <p class="catalog__price"><span class="catalog__sale">2268</span>1 474 р.</p>
+              </div>
+            </a>
+          </li>
+          <li class="catalog__item">
+            <a href="#" class="catalog__link">
+              <figure class="catalog__img">
+                <img src="img/images/recent-4.jpg" alt="Pachyli Bag Рюкзак Адара серо-змеиный">
+              </figure>
+              <span class="catalog__label catalog__label--hidden"></span>
+              <div class="catalog__info">
+                <p class="catalog__title">Pachyli Bag Рюкзак Адара серо-змеиный</p>
+                <p class="catalog__price"><span class="catalog__sale">1889</span>1 227 р.</p>
+              </div>
+            </a>
+          </li>
+          <li class="catalog__item">
+            <a href="#" class="catalog__link">
+              <figure class="catalog__img">
+                <img src="img/images/recent-5.jpg" alt="набор для раскрашивания по номерам по дереву">
+              </figure>
+              <span class="catalog__label catalog__label--hidden"></span>
+              <div class="catalog__info">
+                <p class="catalog__title">PKW-1 55 "Покровский собор" (набор для раскрашивания по номерам по дереву)</p>
+                <p class="catalog__price"><span class="catalog__sale"></span>1 950 р.</p>
+              </div>
+            </a>
+          </li>
+          <li class="catalog__item">
+            <a href="#" class="catalog__link">
+              <figure class="catalog__img">
+                <img src="img/images/recent-6.jpg" alt="Листопад (Fall Leaves)">
+              </figure>
+              <span class="catalog__label catalog__label--hidden"></span>
+              <div class="catalog__info">
+                <p class="catalog__title">Листопад (Fall Leaves)</p>
+                <p class="catalog__price"><span class="catalog__sale"></span>1 162 р.</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    
+    <section class="info wrapper">
+      <div class="content-text">
+        <p>Здравствуйте! Меня зовут Люсиль. Вернее, меня зовут Наталья, но когда я начала «вышивальную виртуальную жизнь» на различных форумах, то взяла себе ник Luceel, и под этим же названием открыла магазин «У Люсиль».</p>
+        <p>Вышивать я начала в раннем детстве. Как и многих других, к вышивке меня приобщила бабушка. В те далекие времена вышивка считалась сугубо прикладным видом творчества, так что начала я с салфеток и полотенец, вышиваемых единственными на тот момент доступными нитями – питерским <a href="#">мулине</a> (те, кто постарше, наверняка еще помнят, как их хранили, заплетая в разноцветные косы и «раздергивая» по мере необходимости), а к вышиванию картин пристрастилась в уже взрослом возрасте. Произошло это в тот момент, когда передо мной встал вопрос: что подарить на свадьбу дорогому мне человеку? Вспомнив, что он очень уважительно относился к моему рукоделию, я пришла в ближайший магазинчик с товарами для творчества и оказалась приятно удивлена разнообразием наборов и сюжетов. Вот с этого мое детское увлечение превратилось во взрослое, а после открытия магазина заняло огромную нишу в моей жизни. Так как я сама вышиваю, то постаралась, чтобы в магазине были все необходимые товары для хобби и рукоделия , а если чего-то и нет, то либо появится в ближайшем времени, либо будет заказано специально для Вас. Купить наборы для рукоделия вы сможете 24 часа в сутки 7 дней в неделю.</p>
+        <p>Не любите вышивать используя готовые наборы для рукоделия или хочется вышить дизайн по схеме из журнала? «У Люсиль» Вы найдете чудесные фэнтезийные схемы для вышивания Mirabilia (Мирабилия), Nora Corbett (Нора Корбетт), Nimue (Нимю) и схемы для вышивки икон и других дизайнов Solaria Gallery (Солярия), мулине и нити для вышивания различных фирм (хлопковые, вискозные, металлизированные, шелковые и так далее), в том числе <a href="#">мулине DMC</a> (ДМЦ), Anchor (Анкор), Gamma (Гамма), питерское мулине фабрики им. Кирова, Riolis (Риолис), Kreinik (Крейник), виспер (wisper) от Rainbow Gallery (Райнбоу Галлери) и многие другие.</p>
+        <p>Чтобы вышивка заиграла и заблестела новыми яркими красками, используйте высококачественный <a href="#">бисер</a> и <a href="#">украшения Mill Hill (Милл Хилл)</a>, разнообразные пуговки и декоративные элементы Blumenthal Lansing (Button Fashion) и РТО.</p>
+        <p>Оптимально организовать процесс вышивания помогут разнообразные <a href="#">станки</a>, рамы и <a href="#">пяльцы</a>, а иглы, ножницы, органайзеры, лампы и лупы и другие товары для рукоделия и творчества известных производителей сделают Ваше любимое хобби еще более приятным.</p>
+        <p>Также магазине «У Люсиль» Вы можете купить товары для  творчества различных видов: изготовления кукол и игрушек, пэчворка, бисероплетения, поделок из фетра, шерсти, бумаги и картона.</p>
+        <p>Более десяти лет безупречной работы на рынке, индивидуальный подход к покупателям (Вам необходимо что-нибудь для творчества, что отсутствует у нас в постоянном ассортименте? Закажем специально для Вас!), бонусы и накопительная система скидок, более десяти тысяч артикулов товаров, постоянное пополнение и расширение ассортимента, актуальная информация о наличии складе – это не все преимущества магазина. К ним можно добавить быструю доставку по Москве и России, пункты самовывоза в более чем 250 городах России, отправка заказов почтой по всему миру.</p>
+        <p>Интернет-магазин «У Люсиль» работает для Вашего удовольствия!</p>
+      </div>
+    </section>
   </main>
   
   <footer class="footer">
-    
+    <div class="wrapper footer__wrap">
+      <p>© У Люсиль 2005-2019</p>
+      <div class="footer__counter">
+      <!--  LiveInternet counter    -->
+      </div>
+      <p>Создание сайта — <a href="#">Тривиум</a></p>
+    </div>
   </footer>
   
-  <script src=""></script>
+  <script src="js/jquery-3.2.1.min.js"></script>
 </body>
 </html>
