@@ -1,0 +1,51 @@
+.sidebar {
+  width: 290px;
+  max-width: 100%;
+}
+
+.sidebar__title {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  color: #5fa0aa;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAyCAMAAAHO9THaAAAAdVBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANDQ0AAAAAAAAAAAAdHR0HBweJiYl6enpwcHCtra1hYWGhoaGcnJyenp7W1tbNzc3Ly8vw8PDn5+fv7+/w8PD39/fu7u739/f4+Pj19fX7+/v+/v7////A7FUcAAAAJ3RSTlMDBAYHCAkKCwwNDQ8REhIZGx8iJScoKSlBREVsdnmCiIuYmJqir7NBxqBCAAAAdUlEQVQoz9WOyQ6CMABEh1qkdUUFFHekff//iR4kLnAz8WBmySSTSUZKBB+0VhfxhkArYKBs3J8OWS/kAs1M0M2+8BpYymxyowrWela/tghH+XjKNHLbwG3lU5UBgKZ4nHvd/NsUu3CV30fgPJ8qsW53mKRGd9GBPkCfbqHIAAAAAElFTkSuQmCC');
+  background-repeat: repeat-x;
+  background-size: 9px 100%;
+  border: 1px solid rgba(255,255,255,0);
+}
+
+.sidebar__list {
+  .reset();
+  list-style: none;
+}
+
+.sidebar__item {
+  a {
+    display: block;
+    padding: 15px;
+    font-size: 17px;
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAyCAMAAAHO9THaAAAAdVBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANDQ0AAAAAAAAAAAAdHR0HBweJiYl6enpwcHCtra1hYWGhoaGcnJyenp7W1tbNzc3Ly8vw8PDn5+fv7+/w8PD39/fu7u739/f4+Pj19fX7+/v+/v7////A7FUcAAAAJ3RSTlMDBAYHCAkKCwwNDQ8REhIZGx8iJScoKSlBREVsdnmCiIuYmJqir7NBxqBCAAAAdUlEQVQoz9WOyQ6CMABEh1qkdUUFFHekff//iR4kLnAz8WBmySSTSUZKBB+0VhfxhkArYKBs3J8OWS/kAs1M0M2+8BpYymxyowrWela/tghH+XjKNHLbwG3lU5UBgKZ4nHvd/NsUu3CV30fgPJ8qsW53mKRGd9GBPkCfbqHIAAAAAElFTkSuQmCC');
+    background-repeat: repeat-x;
+    background-size: 9px 100%;
+    border: 1px solid rgba(255,255,255,0);
+    .transition();
+  }
+  
+  &:hover a,
+  &:active a,
+  &--active a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #c4aa97;
+    border: 1px dashed #fff;
+    .transition();
+  }
+}
