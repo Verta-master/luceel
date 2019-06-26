@@ -43,8 +43,8 @@
   
   &:hover,
   &:active {
-    .catalog__title {
-      color: #5fa0aa;
+    .catalog__title span {
+      border-bottom: 1px dashed #fff;
       .transition();
     }
     .catalog__img img {
@@ -84,7 +84,11 @@
 .catalog__title {
   margin-top: 0;
   text-transform: uppercase;
-  .transition();
+  
+  span {
+    border-bottom: 1px solid rgba(255,255,255,0);
+    .transition();
+  }
 }
 
 .catalog__price {

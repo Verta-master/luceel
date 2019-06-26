@@ -3,11 +3,15 @@
   max-width: 100%;
 }
 
+.sidebar__menu {
+  margin-bottom: 20px;
+}
+
 .sidebar__title {
   display: block;
   width: 100%;
   padding: 15px;
-  color: #5fa0aa;
+  color: @green;
   text-align: left;
   font-size: 18px;
   font-weight: 500;
@@ -48,4 +52,37 @@
     border: 1px dashed #fff;
     .transition();
   }
+}
+
+.sidebar__tags {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: rgba(245, 243, 241, 0.7);
+}
+
+.sidebar__block {
+  margin-bottom: 20px;
+  
+  a {
+    font-size: 13px;
+    margin-right: 12px;
+    text-decoration: none;
+    color: #756a61;
+    .transition();
+    
+    &:hover,
+    &:active {
+      color: #c4aa97;
+      text-decoration: underline;
+      .transition();
+    }
+  }
+}
+
+.sidebar__tag-title {
+  margin: 0;
+  color: #147584;
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: uppercase;
 }

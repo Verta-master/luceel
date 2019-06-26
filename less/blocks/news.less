@@ -1,0 +1,43 @@
+.news {
+  margin-bottom: 30px;
+}
+
+.news__title {
+  .reset();
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.news__item {
+  display: flex;
+  justify-content: space-between;
+  width: 406px;
+  max-width: 100%;
+  margin-right: 15px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAACCCAYAAACU5uILAAAA0ElEQVR42u3YsQqCUBQG4JMVRhFkOURzY0NbVM9yh97AwXcRLri79BoNri71ANKibiIGYke7wiUoovk/8HMv//3uCxyi1/Q4fc5Ai6H6dgxVmpwxZ6JOU8NtYUkpD2VZ3mueoiiurutuuJ9zpg2yPM87dqCbPM9vjuNs+X1Jvu/v34EOhRA7qn8YICAgICAgICAgICAgICAgIKA/UVVVj28gSZILhWF4+gTjOA6IaE1qlbTQcZqmZ9u2V9zP1DsN1cWKokhkWSabT2qlNGp2UE82bpBEGeXjDwAAAABJRU5ErkJggg==');
+  background-repeat: repeat-x;
+  background-size: 9px 100%;
+  
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
+}
+
+.news__img {
+  width: 92px;
+  height: 92px;
+  overflow: hidden;
+}
+
+.news__info {
+  width: ~"calc(100% - 102px)";
+  font-size: 14px;
+  
+  a {
+    display: block;
+    margin-top: 10px;
+  }
+}
