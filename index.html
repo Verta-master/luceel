@@ -5,6 +5,7 @@
   <meta name="robots" content="noindex">
   <meta  name="viewport" content="width=device-width,initial-scale=1">
   <title>Интернет-магазин «У Люсиль» - наборы для вышивания, товары для рукоделия и творчества.</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -91,7 +92,7 @@
         </div>
         <div class="header__place">
           <span>(пн-пт 10-17)</span>
-          <a href="#" class="header__city">Москва</a>
+          <a data-fancybox data-src="#city" href="javascript:;" class="header__city">Москва</a>
         </div>
         <form action="#" class="search">
           <input type="text" class="search__input" placeholder="Введите название товара">
@@ -101,7 +102,7 @@
       <div class="header__cart">
         <div class="title">Моя корзина</div>
         <div class="header__count">1 товаров, 223 р.</div>
-        <a href="#" class="btn btn--brown header__click">Купить в один клик</a>
+        <a data-fancybox data-src="#quick" href="javascript:;" class="btn btn--brown header__click">Купить в один клик</a>
         <a href="#" class="btn header__buy">Моя корзина</a>
       </div>
     </div>
@@ -540,6 +541,104 @@
     </div>
   </footer>
   
+  <!-- Modal windows -->
+  <div style="display: none;" id="city" class="modal modal--city">
+    <p class="modal__title">Выберите ваш регион</p>
+    <div class="modal__wrap">
+      <ul class="modal__list">
+        <li class="modal__item"><a href="#">Москва и ближайшее Подмосковье</a></li>
+        <li class="modal__item"><a href="#">Московская область</a></li>
+        <li class="modal__item"><a href="#">Санкт-Петербург</a></li>
+        <li class="modal__item"><a href="#">Ленинградская область</a></li>
+        <li class="modal__item"><a href="#">Адыгея</a></li>
+      </ul>
+      <ul class="modal__list">
+        <li class="modal__item"><a href="#">Алтай</a></li>
+        <li class="modal__item"><a href="#">Алтайский край</a></li>
+        <li class="modal__item"><a href="#">Амурская область</a></li>
+        <li class="modal__item"><a href="#">Архангельская область</a></li>
+        <li class="modal__item"><a href="#">Астраханская область</a></li>
+      </ul>
+      <ul class="modal__list">
+        <li class="modal__item"><a href="#">Байконур</a></li>
+        <li class="modal__item"><a href="#">Башкортостан</a></li>
+        <li class="modal__item"><a href="#">Белгородская область</a></li>
+        <li class="modal__item"><a href="#">Брянская область</a></li>
+        <li class="modal__item"><a href="#">Бурятия</a></li>
+      </ul>
+      <ul class="modal__list">
+        <li class="modal__item"><a href="#">Владимирская область</a></li>
+        <li class="modal__item"><a href="#">Волгоградская область</a></li>
+        <li class="modal__item"><a href="#">Вологодская область</a></li>
+        <li class="modal__item"><a href="#">Воронежская область</a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div style="display: none;" id="message" class="modal modal--message">
+    <p class="modal__title">Сообщение системы</p>
+    <div class="modal__body">
+      <p>Внимание! Минимальный размер корзины <span>700</span> рублей.</p>
+      <a href="#" class="btn btn--brown modal__btn">Закрыть</a>
+    </div>
+  </div>
+  
+  <div style="display: none;" id="cart" class="modal modal--cart">
+    <p class="modal__title">Товар добавлен</p>
+    <div class="modal__body">
+      <div class="modal__text">
+        <p><b>Всего на сумму:</b> 1 449 р.</p>
+        <p><b>Товарных позиций:</b> 2 шт.</p>
+        <p><b>Общее количество:</b> 2 шт.</p>
+      </div>
+      <div class="modal__btns">
+        <a href="#" class="btn modal__cart-btn">Перейти в корзину</a>
+        <a href="#" class="btn modal__cart-btn">Быстрый заказ</a>
+        <a href="#" class="btn btn--brown modal__cart-btn">Продолжить покупки</a>
+      </div>
+    </div>
+  </div>
+  
+  <div style="display: none;" id="quick" class="modal modal--quick">
+    <p class="modal__title">Быстрый заказ</p>
+    <div class="modal__body">
+      <div class="modal__text">
+        <p><b>Всего на сумму:</b> 1 449 р.</p>
+        <p><b>Товарных позиций:</b> 2 шт.</p>
+        <p><b>Общее количество:</b> 2 шт.</p>
+      </div>
+      <form action="#" class="form">
+        <fieldset class="form__field">
+          <label for="name" class="form__label">ФИО заказчика <span>*</span></label>
+          <input type="text" id="name" class="form__input">
+        </fieldset>
+        <div class="form__line">
+          <fieldset class="form__field">
+            <label for="tel" class="form__label">Контактный телефон <span>*</span></label>
+            <input type="tel" id="tel" class="form__input">
+          </fieldset>
+          <fieldset class="form__field">
+            <label for="email" class="form__label">Адрес электронной почты</label>
+            <input type="email" id="email" class="form__input">
+          </fieldset>
+        </div>
+        <div class="form__captcha">
+          <fieldset class="form__field">
+            <label for="captcha" class="form__label">Контрольное число <span>*</span></label>
+            <input type="text" id="captcha" class="form__input">
+          </fieldset>
+          <div class="form__img">
+            <img src="img/images/captcha.jpg" alt="captcha">
+          </div>
+          <a href="#" class="form__link">Сменить число</a>
+        </div>
+        <p class="form__label"><span>*</span> - Поля обязательные к заполнению</p>
+        <button type="submit" class="btn form__btn-quick">Отправить быстрый заказ</button>
+      </form>
+    </div>
+  </div>
+  
   <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
 </body>
 </html>
