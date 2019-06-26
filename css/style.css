@@ -492,6 +492,9 @@ button {
 .content-text p {
   margin-top: 0;
 }
+.content-text--color {
+  color: #756a61;
+}
 .content__field {
   width: 100%;
   margin-bottom: 20px;
@@ -501,6 +504,9 @@ button {
 .content__comment {
   margin: 0;
   color: #147584;
+}
+.content__small {
+  font-size: 10px;
 }
 .btn {
   display: -webkit-box;
@@ -859,11 +865,19 @@ button {
 .form__label span {
   color: #f1091f;
 }
+.form__message,
 .form__input {
   display: block;
   padding: 4px 6px;
   width: 100%;
   border: 1px solid #b1b1b1;
+}
+.form__input {
+  height: 34px;
+}
+.form__message {
+  height: 250px;
+  min-height: 250px;
 }
 .form__line {
   display: -webkit-box;
