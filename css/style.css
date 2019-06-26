@@ -530,7 +530,11 @@ button {
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
+.header {
+  position: relative;
+}
 .header__top {
+  position: relative;
   margin-bottom: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -681,6 +685,9 @@ button {
 .header__buy {
   width: 170px;
   height: 30px;
+}
+.header__cart-link {
+  display: none;
 }
 .logo img {
   width: 150px;
@@ -913,6 +920,7 @@ button {
   background-repeat: repeat-x;
   background-size: 9px 100%;
   border: 1px solid rgba(255, 255, 255, 0);
+  cursor: default;
 }
 .sidebar__list {
   margin: 0;
@@ -1291,4 +1299,176 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media (max-width: 1270px) {
+  .wrapper {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .menu__btn {
+    display: block;
+    width: 40px;
+    height: 34px;
+    border: 1px dashed #b09987;
+    background-image: url(../img/icons/menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 22px 22px;
+  }
+  .menu__list {
+    display: none;
+    position: absolute;
+    z-index: 100;
+    top: 100%;
+    left: 0;
+    right: 0;
+  }
+  .menu--opened .menu__btn {
+    background-image: url(../img/icons/cancel.svg);
+  }
+  .menu__link {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .news__title,
+  .catalog__list {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .news__item,
+  .catalog__item,
+  .catalog--content .catalog__item {
+    margin-right: 0;
+  }
+}
+@media (max-width: 1022px) {
+  .header__cart-link {
+    position: absolute;
+    top: 10px;
+    right: 200px;
+    display: block;
+    width: 40px;
+    height: 34px;
+    border: 1px dashed #b09987;
+    background-image: url(../img/icons/shopping-cart.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 22px 22px;
+  }
+  .header__cart-desktop {
+    display: none;
+  }
+  .header__main {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 15px;
+  }
+  .header__info {
+    width: calc(100% - 170px);
+  }
+  .header__block {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media (max-width: 766px) {
+  .wrapper--columns {
+    display: block;
+  }
+  .content {
+    width: 100%;
+  }
+  .sidebar__list,
+  .sidebar__tags {
+    display: none;
+  }
+  .sidebar__title {
+    cursor: pointer;
+    position: relative;
+  }
+  .sidebar__title::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: 22px;
+    height: 22px;
+    background-image: url(../img/icons/menu.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .sidebar__title--opened::after {
+    background-image: url(../img/icons/cancel.svg);
+  }
+  .modal__list {
+    width: 50%;
+    padding: 0;
+    padding-right: 10px;
+  }
+  .modal__wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 20px;
+  }
+  .modal__btns {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .modal__cart-btn {
+    width: 45%;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .form__line {
+    display: block;
+  }
+  .form__line .form__field {
+    width: 100%;
+  }
+  .catalog__item,
+  .sidebar,
+  .search,
+  .modal__list,
+  .modal__cart-btn {
+    width: 100%;
+  }
+  .header__info p {
+    font-size: 0;
+  }
+  .header__info p strong {
+    font-size: 14px;
+  }
+  .header__block {
+    margin-top: 5px;
+  }
+  .search__input {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  .header__link {
+    font-size: 18px;
+  }
+  .footer__wrap {
+    display: block;
+    text-align: center;
+  }
+  .footer__counter {
+    margin-right: auto;
+  }
 }

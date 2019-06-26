@@ -100,10 +100,13 @@
         </form>
       </div>
       <div class="header__cart">
-        <div class="title">Моя корзина</div>
-        <div class="header__count">1 товаров, 223 р.</div>
-        <a data-fancybox data-src="#quick" href="javascript:;" class="btn btn--brown header__click">Купить в один клик</a>
-        <a href="#" class="btn header__buy">Моя корзина</a>
+        <a href="#" class="header__cart-link"></a>
+        <div class="header__cart-desktop">
+          <div class="title">Моя корзина</div>
+          <div class="header__count">1 товаров, 223 р.</div>
+          <a data-fancybox data-src="#quick" href="javascript:;" class="btn btn--brown header__click">Купить в один клик</a>
+          <a href="#" class="btn header__buy">Моя корзина</a>
+        </div>
       </div>
     </div>
   </header>
@@ -610,12 +613,12 @@
       <form action="#" class="form">
         <fieldset class="form__field">
           <label for="name" class="form__label">ФИО заказчика <span>*</span></label>
-          <input type="text" id="name" class="form__input">
+          <input type="text" id="name" class="form__input" required>
         </fieldset>
         <div class="form__line">
           <fieldset class="form__field">
             <label for="tel" class="form__label">Контактный телефон <span>*</span></label>
-            <input type="tel" id="tel" class="form__input">
+            <input type="tel" id="tel" class="form__input" required>
           </fieldset>
           <fieldset class="form__field">
             <label for="email" class="form__label">Адрес электронной почты</label>
@@ -625,7 +628,7 @@
         <div class="form__captcha">
           <fieldset class="form__field">
             <label for="captcha" class="form__label">Контрольное число <span>*</span></label>
-            <input type="text" id="captcha" class="form__input">
+            <input type="text" id="captcha" class="form__input" required>
           </fieldset>
           <div class="form__img">
             <img src="img/images/captcha.jpg" alt="captcha">
@@ -639,6 +642,7 @@
   </div>
   
   <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
 </body>
 </html>
