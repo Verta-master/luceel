@@ -1,0 +1,122 @@
+.catalog {
+  width: 100%;
+  margin-bottom: 30px;
+  
+  &--content {
+    .catalog__item {
+      margin-right: 50px;
+    }
+    .catalog__item:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+  
+  &--recent {
+    .catalog__item:nth-child(6n) {
+      margin-right: 0;
+    }
+  }
+}
+
+.catalog__list {
+  .reset();
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.catalog__item {
+  position: relative;
+  width: 195px;
+  margin-right: 15px;
+  margin-bottom: 20px;
+}
+
+.catalog__link {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  
+  &:hover,
+  &:active {
+    .catalog__title {
+      color: #5fa0aa;
+      .transition();
+    }
+    .catalog__img img {
+      transform: scale(1.02);
+      .transition();
+    }
+  }
+}
+
+.catalog__img {
+  width: 100%;
+  height: 213px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAD8CAMAAAHlF04eAAAAjVBMVEUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAANDQ0AAAAAAAAAAAAdHR0HBweJiYl6enpwcHCtra1hYWGhoaGenp6cnJzW1tbNzc3Ly8vw8PDn5+fv7+/w8PD39/fu7u74+Pj39/f19fX7+/v+/v7////HlT2SAAAALnRSTlMAAQIDBAUHCAkKCw0ODxAREhMTFhgaGiQnLDA1Nzk6O11hYpqorbnCxtjZ2+f63L8cSAAAAJRJREFUSMftkkkOwkAMBDvBCZkJEMK+Q9gJM/3/53EgggfACA6W26WSfLJlACBDpZpCwI+q4Agkf9KtGK4OeJ6gke6lk8CRvINsVlIGpa04sYhEImTLWYYtucBrrlB8G548ovSnHmJJjTWpxDDFxvE27+dYO5JkvXr+5/tT1dTU1P7WfCNXlHtP8jweIrHF7jDI2/IATOqP68pz1hkAAAAASUVORK5CYII=') repeat-x 0px 0px;
+  overflow: hidden;
+  
+  img {
+    display: block;
+    .transition();
+  }
+}
+
+.catalog__info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAARCAYAAAF4E7ZwAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAALNJREFUeNpi/P//PwMIMDFAAZwBEEAMICkwj/nKlSu9AAHEDOL+/fs3+eDBg+cZYdpAACCAGHGbgckACCAUnZh2EhJkAREhISG9QKoIiPvWrFlTDBBAGGYyETSLGgKMqampVe/fv28FWS8rK1sIDjGQYAEQgNgAAYbVsxjGDFVFLGlpaVXv3r0ThsYFPNEwMjKCmH3AMHkMNwmk+O3bt8JMTExF//7965OTk3vc398/ASQHAOxnYGsTdMeHAAAAAElFTkSuQmCC') repeat-x 0 100% rgba(83, 83, 83, 0.8);
+}
+
+.catalog__title {
+  margin-top: 0;
+  text-transform: uppercase;
+  .transition();
+}
+
+.catalog__price {
+  margin-top: auto;
+  margin-bottom: 0;
+  font-size: 36px;
+}
+
+.catalog__sale {
+  font-weight: 400;
+  margin-right: 6px;
+  font-size: 20px;
+  color: #aa3739;
+  text-decoration: line-through;
+}
+
+.catalog__label {
+  display: block;
+  position: absolute;
+  z-index: 3;
+  color: #fff;
+  top: 18px;
+  left: 0;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1;
+  padding: 5px 0;
+  width: 52px;
+  text-align: center;
+  background: #aa3739;
+  
+  &--hidden {
+    display: none;
+  }
+}
