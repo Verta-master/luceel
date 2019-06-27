@@ -215,7 +215,7 @@
             <p>Будем благодарны за отзывы о работе нашего магазина на <a href="#">Яндекс.Маркете</a></p>
             <p><a href="#">Отзывы о товарах от пользователей ВКонтакта</a></p>
           </div>
-          <a data-fancybox data-src="#news" href="javascript:;" class="btn news__btn">Добавить отзыв</a>
+          <a data-fancybox data-src="#review" href="javascript:;" class="btn news__btn">Добавить отзыв</a>
           <ul class="review__list">
             <li class="review__field">
               <p class="review__title">Бу Анастасия <time datetime="2019-06-20T12:04">20 Июня 2019 12:04</time></p>
@@ -356,13 +356,45 @@
     </div>
   </div>
   
-  <div style="display: none;" id="news" class="modal modal--quick">
-    <p class="modal__title">Подписаться на новости</p>
+  <div style="display: none;" id="review" class="modal modal--quick">
+    <p class="modal__title">Ваш отзыв на мазазин</p>
     <div class="modal__body">
-      <form action="#" class="form">
+      <form action="#" class="form form--review">
         <fieldset class="form__field">
-          <label for="email2" class="form__label">Адрес электронной почты подписки <span>*</span></label>
+          <label for="message" class="form__label">Текст отзыва <span>*</span></label>
+          <textarea id="message" class="form__message"></textarea>
+        </fieldset>
+        <fieldset class="form__field">
+          <label for="name2" class="form__label">ФИО <span>*</span></label>
+          <input type="text" id="name2" class="form__input" required>
+        </fieldset>
+        <fieldset class="form__field">
+          <label for="tel2" class="form__label">Контактный телефон (не публикуется)</label>
+          <input type="tel" id="tel2" class="form__input" required>
+        </fieldset>
+        <fieldset class="form__field">
+          <label for="email2" class="form__label">Адрес электронной почты (не публикуется)</label>
           <input type="email" id="email2" class="form__input" required>
+        </fieldset>
+        <p>Прикрепить изображения<br>(максимальный вес одного изображения 5Мб и размер 5000х5000 пикселей)</p>
+        <div class="form__file">
+          <p class="form__file-name">Файл не выбран...</p>
+          <input type="file" id="file1" class="form__file-input">
+          <label for="file1" class="form__file-btn">Обзор</label>
+        </div>
+        <div class="form__file">
+          <p class="form__file-name">Файл не выбран...</p>
+          <input type="file" id="file2" class="form__file-input">
+          <label for="file2" class="form__file-btn">Обзор</label>
+        </div>
+        <div class="form__file">
+          <p class="form__file-name">Файл не выбран...</p>
+          <input type="file" id="file3" class="form__file-input">
+          <label for="file3" class="form__file-btn">Обзор</label>
+        </div>
+        <fieldset class="form__field">
+          <label for="message" class="form__label">Код видео</label>
+          <textarea id="message" class="form__message"></textarea>
         </fieldset>
         <div class="form__captcha">
           <fieldset class="form__field">
@@ -375,8 +407,7 @@
           <a href="#" class="form__link">Сменить число</a>
         </div>
         <p class="form__label"><span>*</span> - Поля обязательные к заполнению</p>
-        <button type="submit" class="btn form__btn-quick">Подписаться</button>
-        <p>Подписываясь на новостную рассылку Вы даете согласие на обработку своих <a href="#">персональных данных</a> в соответствии с законом №152-ФЗ "О персональных данных" от 27.07.2006</p>
+        <button type="submit" class="btn form__btn-quick">Отправить сообщение</button>
       </form>
     </div>
   </div>
