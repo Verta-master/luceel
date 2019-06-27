@@ -2166,6 +2166,36 @@ a.breadcrumbs__link:active::after {
   color: #147584;
   font-size: 19px;
 }
+.review__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.review__field {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  font-size: 13px;
+  background-color: #fff;
+}
+.review__field img {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.review__title {
+  margin-top: 0;
+  font-size: 14px;
+  color: #5fa0aa;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.review__title time {
+  margin-left: 20px;
+  font-size: 13px;
+  color: #949494;
+  font-weight: 400;
+  text-transform: none;
+}
 @media (max-width: 1270px) {
   .wrapper {
     width: 100%;
