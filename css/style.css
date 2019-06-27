@@ -1880,7 +1880,7 @@ a.breadcrumbs__link:active::after {
 }
 .card {
   padding: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   background-color: rgba(245, 243, 241, 0.7);
 }
 .card .social {
@@ -2054,6 +2054,118 @@ a.breadcrumbs__link:active::after {
   color: #800000;
   font-size: 14px;
 }
+.slider {
+  position: relative;
+  margin-bottom: 30px;
+}
+.slider__wrap {
+  width: 845px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  width: 40px;
+  height: 90px;
+  background-image: url(../img/icons/right-arrow.svg);
+  background-size: 40px 40px;
+  background-position: right center;
+  outline: none;
+}
+.swiper-button-prev {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  left: 0;
+  background-position: left center;
+}
+.swiper-button-next {
+  right: 0;
+}
+.slider__item {
+  width: 200px;
+  height: auto;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAESCAYAAAFY8M9qAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAbZJREFUeNpiYIACxv9AAGIwwURGGVgZjEDMBWIABBAIsTCAgo0JrmCQEkA3/gAIIBCDGxrJgvDYRvHaKGcwcr4ABBAoxTED8X/GJ0+erHkPBKOZdZRBXQbDtm3b/Hl4ePgAAogBmti4Tp06NQda1LEw3L59u/c/EtiwYUMrShmCNRWPCo4KjgqOCo4KEi84ZcoUWyT+V0ZGRgGAAGKENjuZoYJ/QQz2trY2cWVlZcazZ8/+Y4iJiZGCls1/ra2tRdAL57/otjEzEXTPqMCowKjAqMCowKjAqMCoAN0Ffv36dQ3GWbVqVTWI5gUKvr5x48ZMIJsfIMAYodpgjSMQ/RPUNgKNloBaPSAapIANiDmys7PF3r17txHYMvr+4MGDBb6+vjzQHi4HQ2BgoNi9e/fm/scEf48cOdKrrq4uibXHiwb+MDEQBizEKGIYVTSqaFTRqKJRRaOKRhWNKhpVNKpoVNGoolFFo4pGFY0qGlU0qoimin7//n0aj/zrefPmdYEYXIsWLXL99evXA6RBsy8nT56cBpTjBmJhkCJWKEfw2rVrsR8+fJjFy8sLkuBlAA2/MTCwAACI8rp5a9/ZdgAAAABJRU5ErkJggg==');
+  background-repeat: repeat-x;
+  background-size: 9px 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.slider__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  text-decoration: none;
+}
+.slider__link:hover .slider__title span,
+.slider__link:active .slider__title span {
+  border-bottom: 1px dashed #836f5d;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.slider__link:hover .slider__img img,
+.slider__link:active .slider__img img {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.slider__img {
+  width: 100%;
+  height: 135px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+.slider__img img {
+  display: block;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.slider__info {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+.slider__title {
+  color: #836f5d;
+  line-height: 1.2;
+}
+.slider__title span {
+  border-bottom: 1px solid rgba(255, 255, 255, 0);
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.slider__price {
+  margin-top: auto;
+  margin-bottom: 0;
+  color: #147584;
+  font-size: 19px;
+}
 @media (max-width: 1270px) {
   .wrapper {
     width: 100%;
@@ -2094,6 +2206,9 @@ a.breadcrumbs__link:active::after {
   .catalog__item,
   .catalog--content .catalog__item {
     margin-right: 0;
+  }
+  .slider__wrap {
+    width: 630px;
   }
 }
 @media (max-width: 1022px) {
@@ -2185,6 +2300,9 @@ a.breadcrumbs__link:active::after {
   }
   .cart__btn {
     width: 50px;
+  }
+  .slider__wrap {
+    width: 415px;
   }
 }
 @media (max-width: 766px) {
@@ -2309,5 +2427,8 @@ a.breadcrumbs__link:active::after {
   }
   .tabs__field {
     padding: 10px;
+  }
+  .slider__wrap {
+    width: 200px;
   }
 }
