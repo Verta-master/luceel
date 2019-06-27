@@ -1,0 +1,120 @@
+.card {
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: rgba(245, 243, 241, 0.7);
+  
+  .social {
+    justify-content: flex-start;
+  }
+  .social__item {
+    margin-left: 0;
+  }
+}
+
+.card__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.card__pic {
+  width: 33%;
+  margin-bottom: 20px;
+}
+
+.card__info {
+  width: 65%;
+}
+
+.card__img {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  text-align: center;
+  border: 1px dashed #cccccc;
+  background-color: #fff;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    right: 0;
+    width: 43px;
+    height: 43px;
+    background-image: url(../img/icons/zoom.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.card__tags {
+  padding: 15px;
+  padding-left: 30px;
+  
+  a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #756a61;
+    font-size: 14px;
+    
+    &:hover,
+    &:active {
+      color: #c4aa97;
+      text-decoration: underline;
+    }
+  }
+}
+
+.card__favorit {
+  display: block;
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 30px;
+  font-size: 14px;
+  color: #0866ae;
+  text-decoration: none;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 25px;
+    height: 24px;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAYCAYAAAAPtVbGAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA9NJREFUeNqsVltsFFUY/mbO7HVmtu0C7pTSC41ASkJYAimkEkgQIxokoqRGk0a0oonG2BAfCCEYSQMxIJc+AdEHjS9eXozxwQd4UF/6gLGsXDRS6dZtWEmUi7M7M3tmxv/fBVOx1F3TSf6cnHP+7//+898ySt+aLBr4niD5hKSf5It6QSoa+464UsR5bQTUCMmGMMTSvuU3wCvtH59zEk+KY4stByNDk+CV9ofnmiTruuqqFx6dBNIWeHVctYfP54yk4qsnuqySsnmdAtghNq9TsazdVqQUJ+aKpLXsiPUvbvkVSKSJsQIkW/DK1gmUXHU93/9fkvYQeDgM8JpTEV+1znPUJzc6RBDcSVCAR9ZK8Dnfk97rrM+4mYxpJHtJ1lIiO72KYlHlmIqCuKaFqh7zkYh5GNo+Qa/IEIlXQwUSiGfwBp0f/axzRSUQI7YjIKUSEN4l/K1oJLwW1XwCYlShZpSBr4jsg7exovsWMi0uujJltC3wkG4CotEkEGkmXfI1CKfFgPIDksoNeF4Jv98ECtejuFpMoPhHDLnxFL7/2YQqQp9fMlgJ1ff1uBSv9vuAQZadpqrNmnCI/H8SVF8T1oIdSZMj82GZgEXBWs2t+qeNN49LkF0/Bn9QtC+0xjQ1HLs8aTz93UVFbOudIrABSApN6NdIwvtk7q4TrBeQqAIoF7HrUAbf5NKVZMzfQRof303850ZCbh+93CwHD3VQCIrkYbSxgaORvvcbGD96qVmyPbZ7b3V92ZSUW8792OQOvN1FISvUgPUSuAUMHOgE49kO25uxhOnhZ8yE3Jj7xbT731oKaecBIWYn4PtyHs/sXwLGMZ7tzNonpDBq6vKp8+Mmxn6K1kVycVxD7moKRLCD8XU1o++jo1mXWNLuVVln/Sjf3W0SLaYHP8Siujs+8MWmhfNdpMxUrWr+9lqtxV9Mg1FlxXUTVguREK5uEi9QVna32tSJZi2AqspdSWVdQmEiX12rez7ney2Fxa0lmjrKyrpJpMSi5R23CUz5EJFqY1+6MIWdwxk8tqcXzx/IIJebuvO6SFWP9RlXL0kb2TR6l9GcIHyxkMfud2N4djhLyTWumLq354e8cWXgYBZDdM73rNfbc5N9MRg/04C8t4n79KRUbUfD8dMuPjq7mtKiXNcTcj9dn2SdeMR/hwy/9PX5eQe/vZBe8NymAh7q0WAQjvFE9ul0m8oMfyunqCpfpgqDXdbsZFyO0FTde7/ioqk7XPa0oWRM6lzthHuPjnf9V7hipOgS+EPy3pqNoOqlgn1E8ADpf8A4OvrXmPhLgAEAAO59js4ssUMAAAAASUVORK5CYII=');
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.5;
+  }
+  
+  &:hover,
+  &:active {
+    &::before {
+      opacity: 1;
+    }
+  }
+}
+
+.card__price {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #7e6e61;
+  font-size: 48px;
+}
+
+.card__line {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+  
+  .cart__value-wrap {
+    margin-right: 20px;
+  }
+  .form__btn-quick {
+    margin-top: 0;
+  }
+}
