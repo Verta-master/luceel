@@ -1052,9 +1052,9 @@ button {
   right: 0;
 }
 /* оформление полосы по которой ходит ползунок */
-.ui-widget-content {
-  border: 1px solid #7a5e48;
-  background-color: #7a5e48;
+.ui-widget.ui-widget-content {
+  border: 0;
+  background-color: #b09987;
 }
 /* оформление активного участка (между двумя ползунками) */
 .ui-widget-header {
@@ -1932,6 +1932,7 @@ a.breadcrumbs__link:active::after {
     background-position: center;
     background-size: 22px 22px;
   }
+  .cart__header,
   .header__cart-desktop {
     display: none;
   }
@@ -1955,6 +1956,54 @@ a.breadcrumbs__link:active::after {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .cart__table,
+  .cart__table body,
+  .cart__wrap {
+    display: block;
+  }
+  .cart__name,
+  .delivery,
+  .cart__order {
+    width: 100%;
+  }
+  .delivery {
+    padding-right: 0;
+  }
+  .card__total-text,
+  .cart__total-sum,
+  .cart__btn--remove,
+  .cart__btn--pause {
+    width: auto;
+    margin: 0;
+  }
+  .cart__table tr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 10px;
+    background-color: #fff;
+  }
+  .cart__table td {
+    display: block;
+  }
+  .cart__img {
+    width: auto;
+  }
+  .cart__presence,
+  .cart__price,
+  .cart__sum,
+  .cart__value {
+    width: 25%;
+  }
+  .cart__img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .cart__btn {
+    width: 50px;
   }
 }
 @media (max-width: 766px) {
@@ -2050,7 +2099,21 @@ a.breadcrumbs__link:active::after {
   .footer__counter {
     margin-right: auto;
   }
+  .delivery__links,
+  .delivery__line,
   .form__btns {
     display: block;
+  }
+  .delivery__links a {
+    display: block;
+  }
+  .cart__total .cart__btn {
+    width: 30px;
+  }
+  .cart__presence,
+  .cart__price,
+  .cart__sum,
+  .cart__value {
+    width: 50%;
   }
 }
