@@ -1,0 +1,99 @@
+.slider {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.slider__wrap {
+  width: 845px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 40px;
+  height: 90px;
+  background-image: url(../img/icons/right-arrow.svg);
+  background-size: 40px 40px;
+  background-position: right center;
+  outline: none;
+}
+
+.swiper-button-prev {
+  transform: rotate(180deg);
+  left: 0;
+  background-position: left center;
+}
+
+.swiper-button-next  {
+  right: 0;
+}
+
+.slider__item {
+  width: 200px;
+  height: auto;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAESCAYAAAFY8M9qAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAbZJREFUeNpiYIACxv9AAGIwwURGGVgZjEDMBWIABBAIsTCAgo0JrmCQEkA3/gAIIBCDGxrJgvDYRvHaKGcwcr4ABBAoxTED8X/GJ0+erHkPBKOZdZRBXQbDtm3b/Hl4ePgAAogBmti4Tp06NQda1LEw3L59u/c/EtiwYUMrShmCNRWPCo4KjgqOCo4KEi84ZcoUWyT+V0ZGRgGAAGKENjuZoYJ/QQz2trY2cWVlZcazZ8/+Y4iJiZGCls1/ra2tRdAL57/otjEzEXTPqMCowKjAqMCowKjAqMCoAN0Ffv36dQ3GWbVqVTWI5gUKvr5x48ZMIJsfIMAYodpgjSMQ/RPUNgKNloBaPSAapIANiDmys7PF3r17txHYMvr+4MGDBb6+vjzQHi4HQ2BgoNi9e/fm/scEf48cOdKrrq4uibXHiwb+MDEQBizEKGIYVTSqaFTRqKJRRaOKRhWNKhpVNKpoVNGoolFFo4pGFY0qGlU0qoimin7//n0aj/zrefPmdYEYXIsWLXL99evXA6RBsy8nT56cBpTjBmJhkCJWKEfw2rVrsR8+fJjFy8sLkuBlAA2/MTCwAACI8rp5a9/ZdgAAAABJRU5ErkJggg==');
+  background-repeat: repeat-x;
+  background-size: 9px 100%;
+  box-sizing: border-box;
+}
+
+.slider__link {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  text-decoration: none;
+  
+  &:hover,
+  &:active {
+    .slider__title span {
+      border-bottom: 1px dashed #836f5d;
+      .transition();
+    }
+    .slider__img img {
+      transform: scale(1.02);
+      .transition();
+    }
+  }
+}
+
+.slider__img {
+  width: 100%;
+  height: 135px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  
+  img {
+    display: block;
+    .transition();
+  }
+}
+
+.slider__info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.slider__title {
+  color: #836f5d;
+  line-height: 1.2;
+  
+  span {
+    border-bottom: 1px solid rgba(255,255,255,0);
+    .transition();
+  }
+}
+
+.slider__price {
+  margin-top: auto;
+  margin-bottom: 0;
+  color: @green;
+  font-size: 19px;
+}
