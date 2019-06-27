@@ -6,7 +6,6 @@
   <meta  name="viewport" content="width=device-width,initial-scale=1">
   <title>Интернет-магазин «У Люсиль» - наборы для вышивания, товары для рукоделия и творчества.</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -207,196 +206,138 @@
       <div class="content">
         <nav class="breadcrumbs">
           <a href="#" class="breadcrumbs__link">Главная</a>
-          <span class="breadcrumbs__link">Корзина</span>
+          <a href="#" class="breadcrumbs__link">Каталог товаров</a>
+          <a href="#" class="breadcrumbs__link">Наборы для вышивания</a>
+          <a href="#" class="breadcrumbs__link">Марья Искусница</a>
+          <a href="#" class="breadcrumbs__link">Для дома</a>
+          <span class="breadcrumbs__link">Панно/подушки</span>
         </nav>
         
-        <section class="cart">
-          <h1 class="title">Корзина</h1>
-          <div class="cart__block">
-            <div class="cart__header">
-              <p>Наименование товара</p>
-              <p>Цена</p>
-              <p>Кол-во</p>
-              <p>Стоимость</p>
-              <p>Наличие</p>
-            </div>
-            <table class="cart__table">
-              <tr>
-                <td class="cart__img">
-                  <a href="#"><img src="img/images/img-3.jpg" alt="Панно/подушка"></a>
-                </td>
-                <td class="cart__name">
-                  <a href="#">Панно/подушка "Совуля красотуля"</a>
-                  <p>Артикул: МИ-14.001.31</p>
-                </td>
-                <td class="cart__price">1 226 р.</td>
-                <td class="cart__value">
-                  <div class="cart__balue-wrap">
-                    <button type="button" class="cart__change cart__change--minus">-</button>
-                    <input type="text" class="cart__number" value="1">
-                    <button type="button" class="cart__change cart__change--plus">+</button>
-                  </div>
-                </td>
-                <td class="cart__sum">1 226 р.</td>
-                <td class="cart__presence">Есть</td>
-                <td class="cart__btn">
-                  <a href="#" class="cart__remove" title="Удалить"></a>
-                </td>
-                <td class="cart__btn">
-                  <a href="#" class="cart__pause" title="Отложить"></a>
-                </td>
-              </tr>
-              <tr>
-                <td class="cart__img">
-                  <a href="#"><img src="img/images/img-1.jpg" alt="Время весны (габардин, вышивка бисером)"></a>
-                </td>
-                <td class="cart__name">
-                  <a href="#">Время весны (габардин, вышивка бисером)</a>
-                  <span>Спецпредложение</span>
-                  <p>Артикул: МП Студия-Г-173</p>
-                </td>
-                <td class="cart__price">223 р.</td>
-                <td class="cart__value">
-                  <div class="cart__value-wrap">
-                    <button type="button" class="cart__change cart__change--minus">-</button>
-                    <input type="text" class="cart__number" value="1">
-                    <button type="button" class="cart__change cart__change--plus">+</button>
-                  </div>
-                </td>
-                <td class="cart__sum">223 р.</td>
-                <td class="cart__presence">Под заказ</td>
-                <td class="cart__btn">
-                  <a href="#" class="cart__remove" title="Удалить"></a>
-                </td>
-                <td class="cart__btn">
-                  <a href="#" class="cart__pause" title="Отложить"></a>
-                </td>
-              </tr>
-            </table>
-            <p class="cart__comment">Зарегистрируйтесь и получите <span>29</span> бонусов для Ваших будущих покупок.</p>
-            <div class="cart__total">
-              <p class="card__total-text">Итого:</p>
-              <p class="cart__total-sum">1 449 р.</p>
-              <a href="#" class="cart__btn cart__btn--remove" title="Очистить корзину">
-                <span class="cart__remove"></span>
-                <span class="cart__remove"></span>
+        <section class="card">
+          <div class="card__wrap">
+            <div class="card__pic">
+              <a data-fancybox="gallery" href="img/images/img-3-big.jpg" class="card__img">
+                <img src="img/images/img-3-big.jpg" alt="Панно/подушка">
               </a>
-              <a href="#" class="cart__btn cart__btn--pause" title="Отложить корзину">
-                <span class="cart__pause"></span>
-                <span class="cart__pause"></span>
-              </a>
+              <div class="card__tags">
+                <a href="#">Марья Искусница</a>
+                <a href="#">подушки</a>
+                <a href="#">смешные и милые</a>
+                <a href="#">совы</a>
+                <a href="#">счетный крест</a>
+              </div>
+              <a href="#" class="card__favorit">Добавить в избранное</a>
+              <ul class="social">
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <img src="img/icons/bt-vk.png" alt="У Люсиль в ВК">
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <img src="img/icons/bt-instagram.png" alt="У Люсиль в Инстаграм">
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <img src="img/icons/bt-facebook.png" alt="У Люсиль в Фейсбук">
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <img src="img/icons/bt-odnkl.png" alt="У Люсиль в Одноклассниках">
+                  </a>
+                </li>
+              </ul>
             </div>
-
-            <form action="#" class="form">
-              <div class="cart__wrap">
-                <div class="delivery">
-                  <p class="title">Регион доставки</p>
-                  <div class="delivery__line">
-                    <p class="delivery__city">Москва и ближайшее Подмосковье</p>
-                    <a href="#" class="delivery__link">Выбрать другой регион</a>
-                  </div>
-                  <p class="title">Доставка</p>
-                  <fieldset class="form__field">
-                    <div class="form__delivery">
-                      <input type="radio" id="radio1" name="radio" class="form__radio" checked>
-                      <label for="radio1" class="form__radio-label">Самовывоз: 0. Самовывоз из офиса магазина (м. Свиблово, ул. Искры, д.31, корп.1, оф.507) <a href="#">подробнее</a></label>
-                      <p class="delivery__price">0 р.</p>
-                    </div>
-                    <div class="delivery__links">
-                      <a href="#">Другой пункт на карте</a>
-                      <a href="#">Другой пункт из списка</a>
-                    </div>
-                    <p class="delivery__comment">Заказ к самовывозу подготавливается в течении суток после обработки заказа. Заказы, подтвержденные или оплата за которые поступила после 15-00, будут переданы в службу доставки на следующий рабочий день.</p>
-                  </fieldset>
-                  <fieldset class="form__field">
-                    <div class="form__delivery">
-                      <input type="radio" id="radio2" name="radio" class="form__radio">
-                      <label for="radio2" class="form__radio-label">Курьером: Доставка в пределах МКАД</label>
-                      <p class="delivery__price">250 р.</p>
-                    </div>
-                    <div class="delivery__links">
-                      <a href="#">Выбрать другой район</a>
-                    </div>
-                    <p class="delivery__comment">Доставки по г. Москва и Подмосковью осуществляются в течении 1-3 дней после обработки заказа.</p>
-
-                    <input type="checkbox" id="check" class="form__checkbox">
-                    <label for="check" class="form__checkbox-label">Доставка в субботу</label>
-                    <p class="delivery__time">Временной интервал доставки (со скольки и до скольки)</p>
-                    
-                    <!--  Range slider     -->
-                    <div class="form__slider">
-                      <div class="form__slider-wrap">
-                        <input type="text" id="amount-min" class="form__amount">
-                        <input type="text" id="amount-max" class="form__amount">
-                      </div>
-                      <div class="form__range">
-                        <div id="slider-range"></div>
-                      </div>
-                    </div>
-                  </fieldset>
-                  <fieldset class="form__field">
-                    <div class="form__delivery">
-                      <input type="radio" id="radio3" name="radio" class="form__radio">
-                      <label for="radio3" class="form__radio-label">Почтой России</label>
-                      <p class="delivery__price">395 р.</p>
-                    </div>
-                    <p class="delivery__comment">Отправка заказов по России, Беларуси, Казахстану. Заказы стоимостью свыше 3000 руб. отправляются только по предоплате! Посылки передаются в службу доставки в течении рабочих суток после подтверждения, в выходные посылки не отправляются. Посылки, подтвержденные или оплата за которые поступила после 15-00, будут переданы в службу доставки на следующий рабочий день.</p>
-                  </fieldset>
-
-                  <p class="title">Способ оплаты</p>
-                  <input type="radio" id="radio4" name="payment" class="form__radio" checked>
-                  <label for="radio4" class="form__radio-label">Оплата наличными</label>
-                  <input type="radio" id="radio5" name="payment" class="form__radio">
-                  <label for="radio5" class="form__radio-label">Наложенный платеж</label>
-                  <input type="radio" id="radio6" name="payment" class="form__radio">
-                  <label for="radio6" class="form__radio-label">Банковская карта онлайн</label>
-                  <input type="radio" id="radio7" name="payment" class="form__radio">
-                  <label for="radio7" class="form__radio-label">Другие способы (Western Union, Золотая корона, Лидер, Юнистрим, PayPal - укажите в комментарии к заказу)</label>
+            <div class="card__info">
+              <h1 class="title">Панно/подушка "Совуля красотуля". Марья Искусница. Наборы для вышивания</h1>
+              <div class="card__price">1 226 р.</div>
+              <div class="card__line">
+                <div class="cart__value-wrap">
+                  <button type="button" class="cart__change cart__change--minus">-</button>
+                  <input type="text" class="cart__number" value="1">
+                  <button type="button" class="cart__change cart__change--plus">+</button>
                 </div>
-
-                <div class="cart__order">
-                  <p class="title">Оформление заказа</p>
-                  <div class="cart__order-block">
-                    <fieldset class="form__field">
-                      <label for="name" class="form__label">ФИО заказчика <span>*</span></label>
-                      <input type="text" id="name" class="form__input" required>
-                    </fieldset>
-                    <fieldset class="form__field">
-                      <label for="tel" class="form__label">Контактный телефон <span>*</span></label>
-                      <input type="tel" id="tel" class="form__input" required>
-                    </fieldset>
-                    <fieldset class="form__field">
-                      <label for="email" class="form__label">Ваш e-mail</label>
-                      <input type="email" id="email" class="form__input">
-                    </fieldset>
-                    <fieldset class="form__field">
-                      <label for="name" class="form__label">ФИО получателя заказа</label>
-                      <p>Заполните это поле, если получатель не является заказчиком</p>
-                      <input type="text" id="name" class="form__input" required>
-                    </fieldset>
-                    <label for="message" class="form__label">Вы можете указать комментарий к заказу</label>
-                    <textarea id="message" class="form__message"></textarea>
-                    <input type="checkbox" id="check2" class="form__checkbox">
-                    <label for="check2" class="form__checkbox-label">Не звонить для подтверждения</label>
-                    <input type="checkbox" id="check3" class="form__checkbox">
-                    <label for="check3" class="form__checkbox-label"> У меня есть промокод (для использования скидки введите промокод в поле ниже)</label>
-                    <div class="form__captcha">
-                      <fieldset class="form__field">
-                        <label for="captcha" class="form__label">Контрольное число <span>*</span></label>
-                        <input type="text" id="captcha" class="form__input" required>
-                      </fieldset>
-                      <div class="form__img">
-                        <img src="img/images/captcha.jpg" alt="captcha">
-                      </div>
-                      <a href="#" class="form__link">Сменить число</a>
-                    </div>
-                    <p>Отправляя заказ Покупатель дает согласие на обработку своих <a href="#">персональных данных</a> в соответствии с законом №152-ФЗ "О персональных данных" от 27.07.2006</p>
-                  </div>
+                <a href="#" class="btn form__btn-quick">ДОБАВИТЬ В КОРЗИНУ</a>
+              </div>
+              
+              <!--  Tabs    -->
+              <div class="tabs" id="tabs">
+                <ul class="tabs__title">
+                  <li class="tabs__name"><a href="#tabs-1">Описание</a></li>
+                  <li class="tabs__name"><a href="#tabs-2">Доставка</a></li>
+                  <li class="tabs__name"><a href="#tabs-3">Отзывы (0)</a></li>
+                </ul>
+                <div class="tabs__field" id="tabs-1">
+                  <p>Код товара: 49971</p>
+                  <p>Артикул: МИ-14.001.31</p>
+                  <table class="tabs__table">
+                    <tr>
+                      <td>Техника работы</td>
+                      <td>Счетный крест</td>
+                    </tr>
+                    <tr>
+                      <td>Канва</td>
+                      <td>Аида 14 льняная</td>
+                    </tr>
+                    <tr>
+                      <td>Количество цветов</td>
+                      <td>19</td>
+                    </tr>
+                    <tr>
+                      <td>Размер (см)</td>
+                      <td>40х40</td>
+                    </tr>
+                    <tr>
+                      <td>Заполнение</td>
+                      <td>Частичное</td>
+                    </tr>
+                    <tr>
+                      <td>Тип схемы</td>
+                      <td>Черно-белая</td>
+                    </tr>
+                    <tr>
+                      <td>Производитель</td>
+                      <td>Марья Искусница</td>
+                    </tr>
+                    <tr>
+                      <td>Срок поставки "под заказ"</td>
+                      <td>1-2 недели</td>
+                    </tr>
+                  </table>
+                  <p>Набор укомплектован:</p>
+                  <ul>
+                    <li>канвой Аида 14 ct Zweigart (Германия);</li>
+                    <li>мулине Finca (Испания) с запасом на органайзере;</li>
+                    <li>тканью для обратной стороны подушки; </li>
+                    <li>тесьмой,</li>
+                    <li>иглой (Hemline, Япония);</li>
+                    <li>схемой;</li>
+                    <li>инструкцией.</li>
+                  </ul>
+                  <p class="tabs__comment"><b>Если товара нет в наличии, закажем специально для Вас!</b> Поместите товар в корзину с помощью кнопки "ПОД ЗАКАЗ" и оформите заказ.</p>
+                </div>
+                <div class="tabs__field" id="tabs-2">
+                  <p><b>Cпособы получения заказа</b></p>
+                  <ul>
+                    <li><a href="#">доставка курьером по Москве и ближнему Подмосковью</a></li>
+                    <li><a href="#">доставка курьером по Санкт-Петербургу</a></li>
+                    <li><a href="#">самовывоз (из офиса магазина в г. Москва)</a></li>
+                    <li><a href="#">самовывоз в пунктах выдачи товаров (ПВЗ) Boxberry по всей России <i>(более 250 пунктов)</i></a></li>
+                    <li><a href="#">посылка</a></li>
+                  </ul>
+                </div>
+                <div class="tabs__field" id="tabs-3">
+                  <p>Отзывов нет. Оставьте свой отзыв.</p>
+                  <a href="#" class="btn form__btn-quick">Добавить отзыв</a>
                 </div>
               </div>
-            </form>
+            </div>
           </div>
         </section>
+        
+        
       </div>
     </div>
   </main>
@@ -514,7 +455,12 @@
   <script src="js/script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script src="js/jquery.ui.touch-punch.min.js"></script>
-  <script src="js/range.js"></script>
+  
+  <!-- Tabs -->
+  <script>
+    $(function() {
+      $("#tabs").tabs();
+    });
+  </script>
 </body>
 </html>
