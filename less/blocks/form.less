@@ -23,11 +23,13 @@
 
 .form__input {
   height: 34px;
+  padding: 0 10px;
 }
 
 .form__message {
   height: 250px;
   min-height: 250px;
+  padding: 10px;
 }
 
 .form__line {
@@ -91,6 +93,7 @@
   margin-top: 20px;
 }
 
+.form__file-input,
 .form__radio,
 .form__checkbox {
   display: none;
@@ -211,5 +214,52 @@
   /* скругление для полосы слайдера */
   .ui-corner-all {
     border-radius: 4px;
+  }
+}
+
+.form--review {
+  .form__message {
+    height: 130px;
+    min-height: 130px;
+  }
+  p {
+    font-size: 16px !important;
+  }
+}
+
+.form__file {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.form__file-name {
+  margin: 0;
+  padding: 0 10px;
+  width: ~"calc(100% - 100px)";
+  height: 30px;
+  border: 1px solid #b1b1b1;
+  overflow: hidden;
+}
+
+.form__file-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 30px;
+  color: #fff;
+  line-height: 30px;
+  text-decoration: none;
+  background-color: #5fa0aa;
+  cursor: pointer;
+  .transition();
+  
+  &:hover,
+  &:active {
+    color: #fff;
+    background-color: #458590;
+    .transition();
   }
 }
