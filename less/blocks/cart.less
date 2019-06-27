@@ -1,0 +1,259 @@
+.cart__block {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: rgba(245, 243, 241, 0.7);
+}
+
+.cart__header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  
+  p {
+    margin: 0;
+    color: #7b7b7b;
+    font-weight: 400;
+    
+    &:first-child {
+      width: 42%;
+    }
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(4) {
+      width: 12%;
+      padding-left: 10px;
+    }
+    &:nth-child(5) {
+      width: 22%;
+      padding-left: 10px;
+    }
+  }
+}
+
+.cart__table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+  
+  td {
+    padding: 10px;
+    text-align: left;
+    background-color: #fff;
+  }
+}
+
+.cart__img {
+  vertical-align: top;
+}
+
+.cart__img a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  
+  img {
+    display: block;
+    .transition();
+  }
+  
+  &:hover,
+  &:active {
+    transform: scale(1.02);
+    .transition();
+  }
+}
+
+.cart__name {
+  width: 30%;
+  
+  a {
+    color: #756a61;
+    font-size: 18px;
+    text-decoration: none;
+    
+    &:hover,
+    &:active {
+      text-decoration: underline;
+    }
+  }
+  
+  p {
+    color: #808080;
+  }
+  
+  span {
+    color: #5fa0aa;
+  }
+}
+
+.cart__btn {
+  width: 5%;
+  
+  &--remove {
+    position: relative;
+    margin-left: auto;
+    
+    .cart__remove:first-child {
+      position: absolute;
+      top: 7px;
+      left: 7px;
+    }
+  }
+  
+  &--pause {
+    position: relative;
+    
+    .cart__pause:first-child {
+      position: absolute;
+      top: 7px;
+      left: 7px;
+    }
+  }
+}
+
+.cart__img,
+.cart__presence,
+.cart__sum,
+.cart__value,
+.cart__price {
+  width: 12%;
+}
+
+.cart__presence,
+.cart__price {
+  font-size: 18px;
+}
+
+.cart__sum {
+  font-size: 18px;
+  color: #5fa0aa;
+}
+
+.cart__balue-wrap {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.cart__change {
+  display: block;
+  width: 20px;
+  height: 20px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #c4aa97;
+  .transition();
+  
+  &:hover,
+  &:active {
+    background-color: #b0917a;
+    .transition();
+  }
+}
+
+.cart__number {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+  margin-right: 5px;
+  line-height: 1;
+  font-size: 18px;
+  color: #7e6e61;
+  text-align: center;
+  border: 1px solid #b09987;
+}
+
+.cart__remove,
+.cart__pause {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #c4aa97;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 14px 14px;
+  .transition();
+  
+  &:hover,
+  &:active {
+    background-color: #b0917a;
+    .transition();
+  }
+}
+
+.cart__remove {
+  background-image: url('data:image/gif;base64,R0lGODlhDgAOAIABAP///////yH5BAEAAAEALAAAAAAOAA4AAAIgjI9poIwAX1xw1hmudmdjeSlU2HiJV3WkpnLZlzXibBQAOw==');
+}
+
+.cart__pause {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAHBJREFUeNpi+I8KGJDwRCBmRhODYwY8GkFgPRBzkqMRBE4AsSg5GkHgDhCrkqMRBF4DsRU5GkHgOxAHg+QZwaoRgBGJjSyODP4BcQkTA3mAkRynhpDqxzdAbE1OdKiRkwDEyElyXKQmuUn4EjlAgAEAah9JkNLbAdwAAAAASUVORK5CYII=');
+}
+
+.cart__comment {
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding: 10px;
+  color: #756a61;
+  font-size: 18px;
+  text-align: center;
+  background-color: #fff;
+  
+  span {
+    color: @red;
+  }
+}
+
+.cart__total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 30px;
+  color: #756a61;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #fff;
+}
+
+.card__total-text {
+  width: 66%;
+}
+
+.cart__total-sum {
+  width: 24%;
+}
+
+.cart__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.cart__order {
+  width: 40%;
+  
+  .form__field p {
+    margin: 0;
+    color: #7a5e48;
+    font-size: 14px;
+  }
+  .form__message {
+    height: 90px;
+    min-height: 90px;
+    margin-bottom: 10px;
+  }
+}
+
+.cart__order-block {
+  padding: 20px;
+  background-color: #fff;
+}
