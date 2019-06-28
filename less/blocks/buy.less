@@ -1,0 +1,54 @@
+.buy__columns {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.buy__block {
+  width: 32%;
+  margin-bottom: 30px;
+  font-size: 14px;
+  
+  &--wide {
+    width: 100%;
+  }
+}
+
+.buy__title {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.buy__list {
+  .reset();
+  list-style: none;
+}
+
+.buy__list > li {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 10px;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 32px;
+    height: 30px;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAeCAYAAABNChwpAAAEm0lEQVRYR8WWa0xTZxjH39P29LS0PYW2py2lZeWuTjNwcxPiAlItYJTIRYnJiMu+YLYRpshCzIjVbOPmAENUplFwccsysy/DDRPCZZeYyMaCQBmUa7n1fm8tbWnPgMSEjXKTgufreZ/n/3v/7/M+zwuBV/QVPihEXQ4rBr0K/dJ75yNhMlJisFhLdhQgujAakbye/AkriMUCOKmq/Gy5YccA9n0cuW+POP4LESY0w15acfkH5bpF93cEQHQOTdsf9879WPbu3jkCnlv/Xr31xdFvKwD2IUbH2EhJnDDuHJ8qfOp1egtuFzxQLa+7bQOIl4nFJAbxipArOINBYX8bDfb8H4seDf+/6LcFIL50l5gq9LWEi8PiEAs6NaNUHW271KXwd+MCDnD4eoIEZ3pqeaHsPZAFUauVpvc7HX+2AxnwbS/AKUCUvnvwGMCcdQw+NQK20G2zY9oLv13ovbtWrwmYA9IbB0+QBb77FC4IoTvZ3oHusctdLUOVoBPMbzvAsYbkM2S+p5bAdXFpnhBI2a9q0U6b8wfLZwzrddqtOSADhExBymk41FuNcxxCJpGNT/9j6Bntn8obq9atqPiA18DJhsMSREj8wc0xskLIbKAZNjsnB7U5fZeVLevtfMuNKKtBko4ICLfdXJOQhgRBLi2YnxzQfq4fG6wYqQeuDQNgBWiM1+2ZMzY6pzYalHXjyG5KGPE7nG9/AyfPQ8hzGpgc0HVOzWjzRq9otBvNszQLeBcBjekNu/fc5Wycvml8vF5wVnUSlxLOaCaI5g44yCaIAwmASmHQzPSZ03u+HO5ZL95vJ4wtFnCoMO1bFpM1uFf0dtnyYbE8ILEmkRqOMeoRMZ5vo+jJwUQ2sKvdXvWwuez3ot7KhbV+m82GrqG04tAJnO5pTIhIGD0QeuiS/KeRDplM9p+EOY3SErqIcNWB6hGESIFgJw2f7te3qkYNZ+XVE+rN7n7FOD55S1Ls4zsqJeHHHQloUkUoENXExMQsFVRabep+LIryC86z8xzACrAF63VjZuPshCW1q1T+7GXEVwBIbyVxmTRaB0MM70rmZszxIXH7uHb8s7ttNRpehOARGgkn2EkmAgaHAqfW69UMmarUT7pl8ofAHRCAxSSZNSlvoTGU5iAuib+X8SZuMTkUv04/fgbonmyYAZFQcghgzIcAjcLSMSvXne7+SqF/WfEVDrxIlHtHWsuIIhY5KEaIRkCBzWMBeo8KcCh8wCEJgEFpdRmUtqz2i39tuOGsBum3FWdUJUWFvIa2BoVDYpNPD1k9JhAMswFGXrDe7PapFeYmp85S1CmT27ey+1UdWPyR/fXRAqaYfJ2AehGVaxKwyTwQ5EOBfsI6ZtY4MtqK/T8wNgu06jBKkaVwsHDKH8xoUqwNMkIkAANgQHzaEfunrU+f1IGHwLtZMX/r15yGmdeOZAfHkr/xBTtpOpsGJ0wxO6Yn7Ll9FX2mQIiveQRLAguvnLzjac0wz5cuHx1w4xpSTs9V5c+BEl8fYPFa1qWeItGgJsX4yPf9s8qPQBOY21GAxPOJ1GAWcmfGoirrvTY0HkjxxVz/ArPsxCRixijcAAAAAElFTkSuQmCC');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.buy__list ul {
+  .reset();
+  list-style: disc;
+  padding-left: 15px;
+  
+  li {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}
