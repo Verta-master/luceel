@@ -260,7 +260,9 @@
                   <input type="text" class="cart__number" value="1">
                   <button type="button" class="cart__change cart__change--plus">+</button>
                 </div>
-                <a href="#" class="btn form__btn-quick">ДОБАВИТЬ В КОРЗИНУ</a>
+                <a href="#" class="btn btn--brown form__btn-quick form__btn-quick--small">Под заказ</a>
+                <a href="#" class="btn form__btn-quick">Сообщить о поступлении</a>
+                <!--  <a href="#" class="btn form__btn-quick">ДОБАВИТЬ В КОРЗИНУ</a>  -->
               </div>
               
               <!--  Tabs    -->
@@ -331,7 +333,7 @@
                 </div>
                 <div class="tabs__field" id="tabs-3">
                   <p>Отзывов нет. Оставьте свой отзыв.</p>
-                  <a href="#" class="btn form__btn-quick">Добавить отзыв</a>
+                  <a data-fancybox data-src="#review" href="javascript:;" class="btn form__btn-quick">Добавить отзыв</a>
                 </div>
               </div>
             </div>
@@ -584,6 +586,62 @@
     </div>
   </div>
   
+  <div style="display: none;" id="review" class="modal modal--quick">
+    <p class="modal__title">Ваш отзыв на мазазин</p>
+    <div class="modal__body">
+      <form action="#" class="form form--review">
+        <fieldset class="form__field">
+          <label for="message" class="form__label">Текст отзыва <span>*</span></label>
+          <textarea id="message" class="form__message"></textarea>
+        </fieldset>
+        <fieldset class="form__field">
+          <label for="name2" class="form__label">ФИО <span>*</span></label>
+          <input type="text" id="name2" class="form__input" required>
+        </fieldset>
+        <fieldset class="form__field">
+          <label for="tel2" class="form__label">Контактный телефон (не публикуется)</label>
+          <input type="tel" id="tel2" class="form__input" required>
+        </fieldset>
+        <fieldset class="form__field">
+          <label for="email2" class="form__label">Адрес электронной почты (не публикуется)</label>
+          <input type="email" id="email2" class="form__input" required>
+        </fieldset>
+        <p>Прикрепить изображения<br>(максимальный вес одного изображения 5Мб и размер 5000х5000 пикселей)</p>
+        <div class="form__file">
+          <p class="form__file-name">Файл не выбран...</p>
+          <input type="file" id="file1" class="form__file-input">
+          <label for="file1" class="form__file-btn">Обзор</label>
+        </div>
+        <div class="form__file">
+          <p class="form__file-name">Файл не выбран...</p>
+          <input type="file" id="file2" class="form__file-input">
+          <label for="file2" class="form__file-btn">Обзор</label>
+        </div>
+        <div class="form__file">
+          <p class="form__file-name">Файл не выбран...</p>
+          <input type="file" id="file3" class="form__file-input">
+          <label for="file3" class="form__file-btn">Обзор</label>
+        </div>
+        <fieldset class="form__field">
+          <label for="message" class="form__label">Код видео</label>
+          <textarea id="message" class="form__message"></textarea>
+        </fieldset>
+        <div class="form__captcha">
+          <fieldset class="form__field">
+            <label for="captcha" class="form__label">Контрольное число <span>*</span></label>
+            <input type="text" id="captcha" class="form__input" required>
+          </fieldset>
+          <div class="form__img">
+            <img src="img/images/captcha.jpg" alt="captcha">
+          </div>
+          <a href="#" class="form__link">Сменить число</a>
+        </div>
+        <p class="form__label"><span>*</span> - Поля обязательные к заполнению</p>
+        <button type="submit" class="btn form__btn-quick">Отправить сообщение</button>
+      </form>
+    </div>
+  </div>
+
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
