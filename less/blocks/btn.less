@@ -5,6 +5,7 @@
   color: #fff;
   font-weight: 500;
   font-size: 16px;
+  line-height: 1;
   text-transform: uppercase;
   text-align: center;
   border: 1px dashed #fff;
@@ -21,6 +22,17 @@
   
   &--brown {
     background-color: #c4aa97;
+    
+    &:hover,
+    &:active {
+      color: #fff;
+      background-color: #b0917a;
+      .transition();
+    }
+  }
+  
+  &--dark {
+    background-color: #988b81;
     
     &:hover,
     &:active {

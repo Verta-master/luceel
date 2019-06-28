@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <meta  name="viewport" content="width=device-width,initial-scale=1">
+  <title>Интернет-магазин «У Люсиль» - наборы для вышивания, товары для рукоделия и творчества.</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__top">
+      <div class="wrapper header__wrap">
+        <nav class="menu">
+          <button type="button" class="menu__btn"></button>
+          <ul class="menu__list">
+            <li class="menu__item menu__item--active">
+              <a href="#" class="menu__link">Главная</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Новости</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Статьи и схемы</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Отзывы</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Бонусы</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Пункты самовывоза</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Как купить</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Контакты | Написать нам</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Галерея</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__user">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="#">Вход</a>
+            </li>
+            <li class="header__item">
+              <a href="#">Регистрация</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper header__main">
+      <a href="index.html" class="logo">
+        <img src="img/images/logo.png" alt="Logo">
+      </a>
+      <div class="header__info">
+        <p><strong>ТОВАРЫ ДЛЯ ВЫШИВАНИЯ И ТВОРЧЕСТВА</strong>Актуальное наличие товара на сайте. Доставка по Москве и Санкт-Петербургу. Самовывозы в 330 городах России. Отправка почтой по всему миру.</p>
+        <ul class="social">
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <img src="img/icons/bt-vk.png" alt="У Люсиль в ВК">
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <img src="img/icons/bt-instagram.png" alt="У Люсиль в Инстаграм">
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <img src="img/icons/bt-facebook.png" alt="У Люсиль в Фейсбук">
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <img src="img/icons/bt-odnkl.png" alt="У Люсиль в Одноклассниках">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="header__block">
+        <div class="header__phones">
+          <a href="tel:+74951443125" class="header__link header__link--phone">+7 495 144-3125</a>
+          <a href="tel:+79258835521" class="header__link header__link--mobile">+7 925 883-5521</a>
+        </div>
+        <div class="header__place">
+          <span>(пн-пт 10-17)</span>
+          <a data-fancybox data-src="#city" href="javascript:;" class="header__city">Москва</a>
+        </div>
+        <form action="#" class="search">
+          <input type="text" class="search__input" placeholder="Введите название товара">
+          <button type="submit" class="search__btn">Найти</button>
+        </form>
+      </div>
+      <div class="header__cart">
+        <a href="#" class="header__cart-link"></a>
+        <div class="header__cart-desktop">
+          <div class="title">Моя корзина</div>
+          <div class="header__count">1 товаров, 223 р.</div>
+          <a data-fancybox data-src="#quick" href="javascript:;" class="btn btn--brown header__click">Купить в один клик</a>
+          <a href="#" class="btn header__buy">Моя корзина</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <main>
+    <div class="wrapper wrapper--columns">
+      <!--   Left sidebar   -->
+      <aside class="sidebar">
+        <nav class="sidebar__menu">
+          <button type="button" class="sidebar__title">Каталог</button>
+          <ul class="sidebar__list">
+            <li class="sidebar__item sidebar__item--active">
+              <a href="#">Наборы для вышивания</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#">Буклеты (схемы)</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#">Канва и основы для вышивания</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#">Мулине (нити для вышивания)</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#">Пяльцы, рамы, станки</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#">Инструменты для вышивания и шитья</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#">Бисер, пуговицы, декор</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#">Вязание</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#">Пэчворк, шитье, игрушки</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#">Творчество</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#">РАСПРОДАЖА</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#">Подарочные сертификаты</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#">Тематические подборки</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#">Снято с производства</a>
+            </li>
+            <li class="sidebar__item">
+              <a href="#">Готовые изделия</a>
+            </li>
+          </ul>
+        </nav>
+        
+        <div class="sidebar__tags">
+          <div class="sidebar__block">
+            <p class="sidebar__tag-title">Техника работы</p>
+            <a href="#">аппликация</a>
+            <a href="#">барджелло/баргелло</a>
+            <a href="#">бисероплетение</a>
+            <a href="#">болгарский крест</a>
+            <a href="#">валяние</a>
+          </div>
+          <div class="sidebar__block">
+            <p class="sidebar__tag-title">Назначение</p>
+            <a href="#">готовые изделия</a>
+            <a href="#">для кухни</a>
+            <a href="#">для начинающих</a>
+            <a href="#">игольницы и бискорню</a>
+            <a href="#">игрушки</a>
+          </div>
+          <div class="sidebar__block">
+            <p class="sidebar__tag-title">Сюжеты</p>
+            <a href="#">2019 год - год свиньи</a>
+            <a href="#">Riolis premium</a>
+            <a href="#">Rto vintage</a>
+            <a href="#">Tatty Teddy</a>
+            <a href="#">ангелы</a>
+          </div>
+          <div class="sidebar__block">
+            <p class="sidebar__tag-title">Производитель</p>
+            <a href="#">ADELIA</a>
+            <a href="#">Anchor</a>
+            <a href="#">Blend</a>
+            <a href="#">Blumenthal Lansing</a>
+            <a href="#">Bothy Threads</a>
+          </div>
+        </div>
+      </aside>
+      
+      <!--   Content   -->
+      <div class="content">
+        <nav class="breadcrumbs">
+          <a href="#" class="breadcrumbs__link">Главная</a>
+          <span class="breadcrumbs__link">Каталог товаров</span>
+        </nav>
+        
+        <section class="catalog">
+          <h1 class="title">Буклеты (схемы)</h1>
+          <ul class="catalog__links">
+            <li class="catalog__field">
+              <a href="#">Mirabilia<span>(108)</span></a>
+            </li>
+            <li class="catalog__field">
+              <a href="#">Nimue<span>(62)</span></a>
+            </li>
+            <li class="catalog__field">
+              <a href="#">Nora Corbett<span>(74)</span></a>
+            </li>
+            <li class="catalog__field">
+              <a href="#">PINN (Пинн)<span>(2)</span></a>
+            </li>
+            <li class="catalog__field">
+              <a href="#">RICO [распродажа]<span>(8)</span></a>
+            </li>
+            <li class="catalog__field">
+              <a href="#">Solaria Gallery (Стоянка Иванова)<span>(71)</span></a>
+            </li>
+            <li class="catalog__field">
+              <a href="#">Дивная вишня<span>(7)</span></a>
+            </li>
+            <li class="catalog__field">
+              <a href="#">Мережка (Merejka)<span>(13)</span></a>
+            </li>
+            <li class="catalog__field">
+              <a href="#">Luceel (Люсиль)<span>(22)</span></a>
+            </li>
+            <li class="catalog__field">
+              <a href="#">Бесплатные схемы<span>(146)</span></a>
+            </li>
+          </ul>
+          
+          <div class="catalog__selector">
+            <p class="catalog__selector-btn">Все товары</p>
+            <ul class="catalog__selection">
+              <li><a href="#" class="catalog__option catalog__option--active">Все товары</a></li>
+              <li><a href="#" class="catalog__option">В наличии и предзаказ</a></li>
+              <li><a href="#" class="catalog__option">Товары в наличии</a></li>
+            </ul>
+          </div>
+          
+          <div class="catalog__filter">
+            <span>Сортировать по:</span>
+            <a href="#" class="catalog__sort catalog__sort--active catalog__sort--up">Порядок</a>
+            <a href="#" class="catalog__sort">Цене</a>
+            <a href="#" class="catalog__sort">Артикулу</a>
+            <a href="#" class="catalog__sort">Наименованию</a>
+          </div>
+          
+          <ul class="product">
+            <li class="product__item">
+              <a href="#" class="product__link">
+                <figure class="product__img">
+                  <img src="img/images/img-1.jpg" alt="Красная герань (подушка/панно)">
+                </figure>
+                <p class="product__title"><span>Красная герань (подушка/панно)</span></p>
+              </a>
+              <span class="catalog__label">-29%</span>
+              <div class="product__info">
+                <p class="product__price"><span class="product__sale">1889</span>1246 p.</p>
+                <a href="#" class="btn btn--brown product__btn">В корзину</a>
+              </div>
+            </li>
+            <li class="product__item">
+              <a href="#" class="product__link">
+                <figure class="product__img">
+                  <img src="img/images/img-10.jpg" alt="Красная герань (подушка/панно)">
+                </figure>
+                <p class="product__title"><span>Схема "Истории осьминожек. Афродита радуется подарку" </span></p>
+              </a>
+              <div class="product__info">
+                <p class="product__price">1 p.</p>
+                <a data-fancybox data-src="#message2" href="javascript:;" class="btn product__btn">Сообщить</a>
+              </div>
+            </li>
+            <li class="product__item">
+              <a href="#" class="product__link">
+                <figure class="product__img">
+                  <img src="img/images/img-3.jpg" alt="Схема Зельда">
+                </figure>
+                <p class="product__title"><span>Схема "Зельда" (Zelda)</span></p>
+              </a>
+              <div class="product__info">
+                <p class="product__price">1240 p.</p>
+                <a href="#" class="btn btn--brown product__btn">В корзину</a>
+              </div>
+            </li>
+            <li class="product__item">
+              <a href="#" class="product__link">
+                <figure class="product__img">
+                  <img src="img/images/img-8.jpg" alt="Красная герань (подушка/панно)">
+                </figure>
+                <p class="product__title"><span>Схема "Новогодние каникулы" (электронная схема для вышивания)</span></p>
+              </a>
+              <div class="product__info">
+                <p class="product__price"><span class="product__sale">70</span>50 p.</p>
+                <a href="#" class="btn btn--dark product__btn">Под заказ</a>
+              </div>
+            </li>
+            <li class="product__item">
+              <a href="#" class="product__link">
+                <figure class="product__img">
+                  <img src="img/images/img-6.jpg" alt="Красная герань (подушка/панно)">
+                </figure>
+                <p class="product__title"><span>Красная герань (подушка/панно)</span></p>
+              </a>
+              <div class="product__info">
+                <p class="product__price"><span class="product__sale">1889</span>1246 p.</p>
+                <a href="#" class="btn btn--dark product__btn">Под заказ</a>
+              </div>
+            </li>
+            <li class="product__item">
+              <a href="#" class="product__link">
+                <figure class="product__img">
+                  <img src="img/images/img-7.jpg" alt="Красная герань (подушка/панно)">
+                </figure>
+                <p class="product__title"><span>Красная герань (подушка/панно)</span></p>
+              </a>
+              <div class="product__info">
+                <p class="product__price">1246 p.</p>
+                <a href="#" class="btn btn--brown product__btn">В корзину</a>
+              </div>
+            </li>
+            <li class="product__item">
+              <a href="#" class="product__link">
+                <figure class="product__img">
+                  <img src="img/images/img-9.jpg" alt="Красная герань (подушка/панно)">
+                </figure>
+                <p class="product__title"><span>Красная герань (подушка/панно)</span></p>
+              </a>
+              <div class="product__info">
+                <p class="product__price"><span class="product__sale">1889</span>1246 p.</p>
+                <a href="#" class="btn btn--brown product__btn">В корзину</a>
+              </div>
+            </li>
+            <li class="product__item">
+              <a href="#" class="product__link">
+                <figure class="product__img">
+                  <img src="img/images/img-11.jpg" alt="Красная герань (подушка/панно)">
+                </figure>
+                <p class="product__title"><span>Красная герань (подушка/панно)</span></p>
+              </a>
+              <div class="product__info">
+                <p class="product__price"><span class="product__sale">1889</span>1246 p.</p>
+                <a data-fancybox data-src="#message2" href="javascript:;" class="btn product__btn">Сообщить</a>
+              </div>
+            </li>
+          </ul>
+        </section>
+        
+        <div class="more">
+          <a href="#" class="btn more__btn">Показать еще</a>
+          <a href="#" class="btn more__btn">Показать все (499)</a>
+          <select class="more__select" title="Показывать на странице">
+            <option value="16" selected>16</option>
+            <option value="32">32</option>
+            <option value="64">64</option>
+            <option value="128">128</option>
+          </select>
+        </div>
+        
+        <nav class="pages">
+          <a href="#" class="pages__text pages__text--disabled">&lsaquo; Предыдущая</a>
+          <span class="pages__link pages__link--active">1</span>
+          <a href="#" class="pages__link">2</a>
+          <a href="#" class="pages__link">3</a>
+          <span class="pages__text">...</span>
+          <a href="#" class="pages__link">33</a>
+          <a href="#" class="pages__text">Следующая &rsaquo;</a>
+        </nav>
+        
+        <div class="content-text">
+          <p>Для каждой мастерицы наступает момент, когда хочется проявить свои умения и создать особенные вышивки, материалы для которых можно подобрать, исходя из внутренних предпочтений и художественного вкуса.</p>
+          <p>Для этого в интернет-магазине <strong>«У Люсиль»</strong> есть каталог Буклеты (Схемы), в котором можно приобрести подходящие наборы для вышивания. Среди них вы найдете схемы фирм <a href="#">Mirabilia</a>, <a href="#">Nimue</a>, <a href="#">Nora Corbett</a>, <a href="#">Solaria Gallery</a>, <a href="#">Мережка</a>, <a href="#">RICO</a>, PINN, Дивная вишня. Удивительное разнообразие подхода к схемам позволит вам или пойти простым путем и купить рекомендованные <strong>«У Люсиль»</strong> нити и мулине или самим создать цветовую палитру будущих вышивок.</p>
+          <p><strong>У Mirabilia в магазине «У Люсиль» вы можете приобрести буклеты</strong> со сказочно-фэнтезийными портретами, каждый из которого выполнен в великолепном изысканном стиле, приближенном к иллюстративному.</p>
+          <p><i><b>Это следующие подборки:</b></i></p>
+          <ul>
+            <li>дамами;</li>
+            <li>феями;</li>
+            <li>королевами;</li>
+            <li>русалками;</li>
+            <li>другими дизайнами.</li>
+          </ul>
+          <p><b>У Nimue в магазине «У Люсиль» </b>вы можете купить чудесные истории, которые будто сошли со страниц старинных сказок и вышиваются обычно в сдержанной цветовой палитре, которая делает каждую работу удивительно графичной и точной.</p>
+          <p><i><b>Это следующие подборки:</b></i></p>
+          <ul>
+            <li>коты;</li>
+            <li>люди;</li>
+            <li>маленький рыцарь;</li>
+            <li>сказки;</li>
+            <li>феи и фэйри;</li>
+            <li>часы «Человечки-горошки».</li>
+          </ul>
+          <p><b>У Nora Corbett в магазине «У Люсиль» вы сможете приобрести яркие современные вышивки</b> в сказочном стиле с самыми разнообразными незнакомками, умеющими совершать волшебство. Некоторые из них прекрасно подойдут для праздника каждого из Сезонов и Хеллоуина, не зря же даже феечки могут превратиться в крошечных ведьмочек.</p>
+          <p><i><b>Это следующие подборки:</b></i></p>
+          <ul>
+            <li>маленькие русалки;</li>
+            <li>русалки;</li>
+            <li>мисс Бабочки;</li>
+            <li>музы;</li>
+            <li>феечки (Кутюр, Сезонов, Черного Леса, Цветы, Ведьмочки).</li>
+          </ul>
+          <p><b>У Solaria Gallery в магазине «У Люсиль» вы можете купить:</b></p>
+          <ul>
+            <li>схемы с иконами, входящими в серию «Христианство» (каждая икона выполнена в классическом русском стиле);</li>
+            <li>портреты (женские образы современной женщины, индианки, а также представленные в виде известных классических картин);</li>
+            <li>яйца Фаберже (классические схемы с яйцами, которые украсят Пасху);</li>
+            <li>классическую схему с лошадьми;</li>
+            <li>схемы вышивок в новогоднем стиле с игрушками различных форм, а также схемы с новогодними натюрмортами со свечами.</li>
+          </ul>
+          <p><b>У Мережки в магазине «У Люсиль» вы найдете схемы с подушками</b>, украшенными венками, а также классическую вышивку с пасхальными мотивами.</p>
+          <p><b>Дивная Вишня представила в схемах </b>свои новогодние открытки, которые также отличаются необычностью и привлекают внимание для создания лучшего поздравления.</p>
+          <p><b>У Rico в магазине «У Люсиль» можно приобрести схемы</b> для детских полотенец и купальных принадлежностей. Чудесные буклеты будто созданы, чтобы порадовать малышей маленькими сказками.</p>
+          <p><b>Большую подборку бесплатных схем в каталоге «У Люсиль» также постоянно пополняют</b>. Буклеты здесь снабжены подробными инструкциями по исполнению. Это позволяет начинающим мастерицам учиться на простых примерах. Но есть и схемки для души, которые придуманы дизайнерами и друзьями магазина.</p>
+          <p>Среди них вы найдете прекрасные схемы, предназначенные для деревянной основы: бабочек, улиток, самовар, пасхальное яйцо. А также простые схемы, с которыми справятся даже обычные вышивальщицы. Коллекция постоянно пополняется!!!</p>
+          <p><b>Схемы (буклеты) разных фирм из каталога спешите приобрести «У Люсиль». </b>Заказы поставляются по всей России и за рубежом.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer__wrap">
+        <span>© У Люсиль 2005-2019</span>
+        <div class="footer__counter">
+        <!--  LiveInternet counter    -->
+        </div>
+        <span>Создание сайта — <a href="#">Тривиум</a></span>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Modal windows -->
+  <div style="display: none;" id="city" class="modal modal--city">
+    <p class="modal__title">Выберите ваш регион</p>
+    <div class="modal__wrap">
+      <ul class="modal__list">
+        <li class="modal__item"><a href="#">Москва и ближайшее Подмосковье</a></li>
+        <li class="modal__item"><a href="#">Московская область</a></li>
+        <li class="modal__item"><a href="#">Санкт-Петербург</a></li>
+        <li class="modal__item"><a href="#">Ленинградская область</a></li>
+        <li class="modal__item"><a href="#">Адыгея</a></li>
+      </ul>
+      <ul class="modal__list">
+        <li class="modal__item"><a href="#">Алтай</a></li>
+        <li class="modal__item"><a href="#">Алтайский край</a></li>
+        <li class="modal__item"><a href="#">Амурская область</a></li>
+        <li class="modal__item"><a href="#">Архангельская область</a></li>
+        <li class="modal__item"><a href="#">Астраханская область</a></li>
+      </ul>
+      <ul class="modal__list">
+        <li class="modal__item"><a href="#">Байконур</a></li>
+        <li class="modal__item"><a href="#">Башкортостан</a></li>
+        <li class="modal__item"><a href="#">Белгородская область</a></li>
+        <li class="modal__item"><a href="#">Брянская область</a></li>
+        <li class="modal__item"><a href="#">Бурятия</a></li>
+      </ul>
+      <ul class="modal__list">
+        <li class="modal__item"><a href="#">Владимирская область</a></li>
+        <li class="modal__item"><a href="#">Волгоградская область</a></li>
+        <li class="modal__item"><a href="#">Вологодская область</a></li>
+        <li class="modal__item"><a href="#">Воронежская область</a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div style="display: none;" id="message" class="modal modal--message">
+    <p class="modal__title">Сообщение системы</p>
+    <div class="modal__body">
+      <p>Внимание! Минимальный размер корзины <span>700</span> рублей.</p>
+      <a href="#" class="btn btn--brown modal__btn">Закрыть</a>
+    </div>
+  </div>
+  
+  <div style="display: none;" id="cart" class="modal modal--cart">
+    <p class="modal__title">Товар добавлен</p>
+    <div class="modal__body">
+      <div class="modal__text">
+        <p><b>Всего на сумму:</b> 1 449 р.</p>
+        <p><b>Товарных позиций:</b> 2 шт.</p>
+        <p><b>Общее количество:</b> 2 шт.</p>
+      </div>
+      <div class="modal__btns">
+        <a href="#" class="btn modal__cart-btn">Перейти в корзину</a>
+        <a href="#" class="btn modal__cart-btn">Быстрый заказ</a>
+        <a href="#" class="btn btn--brown modal__cart-btn">Продолжить покупки</a>
+      </div>
+    </div>
+  </div>
+  
+  <div style="display: none;" id="quick" class="modal modal--quick">
+    <p class="modal__title">Быстрый заказ</p>
+    <div class="modal__body">
+      <div class="modal__text">
+        <p><b>Всего на сумму:</b> 1 449 р.</p>
+        <p><b>Товарных позиций:</b> 2 шт.</p>
+        <p><b>Общее количество:</b> 2 шт.</p>
+      </div>
+      <form action="#" class="form">
+        <fieldset class="form__field">
+          <label for="name" class="form__label">ФИО заказчика <span>*</span></label>
+          <input type="text" id="name" class="form__input" required>
+        </fieldset>
+        <div class="form__line">
+          <fieldset class="form__field">
+            <label for="tel" class="form__label">Контактный телефон <span>*</span></label>
+            <input type="tel" id="tel" class="form__input" required>
+          </fieldset>
+          <fieldset class="form__field">
+            <label for="email" class="form__label">Адрес электронной почты</label>
+            <input type="email" id="email" class="form__input">
+          </fieldset>
+        </div>
+        <div class="form__captcha">
+          <fieldset class="form__field">
+            <label for="captcha" class="form__label">Контрольное число <span>*</span></label>
+            <input type="text" id="captcha" class="form__input" required>
+          </fieldset>
+          <div class="form__img">
+            <img src="img/images/captcha.jpg" alt="captcha">
+          </div>
+          <a href="#" class="form__link">Сменить число</a>
+        </div>
+        <p class="form__label"><span>*</span> - Поля обязательные к заполнению</p>
+        <button type="submit" class="btn form__btn-quick">Отправить быстрый заказ</button>
+      </form>
+    </div>
+  </div>
+  
+  <div style="display: none;" id="message2" class="modal modal--message2">
+    <p class="modal__title">Сообщение системы</p>
+    <div class="modal__body">
+      <p>Для сохранения заявки в личном кабинете необходима авторизация.</p>
+      <div class="modal__btns">
+        <a href="#" class="btn modal__cart-btn">Зайти в личный кабинет</a>
+        <a href="#" class="btn modal__cart-btn">Регистрация</a>
+        <a href="#" class="btn btn--brown modal__cart-btn">Продолжить без авторизации</a>
+      </div>
+    </div>
+  </div>
+  
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
+  
+  <!-- Filter btn -->
+  <script>
+    $('.catalog__selector-btn').click(function(e) {
+      e.stopPropagation();
+      $('.catalog__selection').slideToggle();
+    });
+    $("body").click(function(){
+      $('.catalog__selection').slideUp();
+    });
+  </script>
+</body>
+</html>

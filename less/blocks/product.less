@@ -1,68 +1,51 @@
-.slider {
+.product {
+  .reset();
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.product__item {
   position: relative;
-  margin-bottom: 30px;
-}
-
-.slider__wrap {
-  width: 845px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.swiper-button-prev,
-.swiper-button-next {
-  width: 40px;
-  height: 90px;
-  background-image: url(../img/icons/right-arrow.svg);
-  background-size: 40px 40px;
-  background-position: right center;
-  outline: none;
-}
-
-.swiper-button-prev {
-  transform: rotate(180deg);
-  left: 0;
-  background-position: left center;
-}
-
-.swiper-button-next  {
-  right: 0;
-}
-
-.slider__item {
-  width: 200px;
-  height: auto;
-  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAESCAYAAAFY8M9qAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAbZJREFUeNpiYIACxv9AAGIwwURGGVgZjEDMBWIABBAIsTCAgo0JrmCQEkA3/gAIIBCDGxrJgvDYRvHaKGcwcr4ABBAoxTED8X/GJ0+erHkPBKOZdZRBXQbDtm3b/Hl4ePgAAogBmti4Tp06NQda1LEw3L59u/c/EtiwYUMrShmCNRWPCo4KjgqOCo4KEi84ZcoUWyT+V0ZGRgGAAGKENjuZoYJ/QQz2trY2cWVlZcazZ8/+Y4iJiZGCls1/ra2tRdAL57/otjEzEXTPqMCowKjAqMCowKjAqMCoAN0Ffv36dQ3GWbVqVTWI5gUKvr5x48ZMIJsfIMAYodpgjSMQ/RPUNgKNloBaPSAapIANiDmys7PF3r17txHYMvr+4MGDBb6+vjzQHi4HQ2BgoNi9e/fm/scEf48cOdKrrq4uibXHiwb+MDEQBizEKGIYVTSqaFTRqKJRRaOKRhWNKhpVNKpoVNGoolFFo4pGFY0qGlU0qoimin7//n0aj/zrefPmdYEYXIsWLXL99evXA6RBsy8nT56cBpTjBmJhkCJWKEfw2rVrsR8+fJjFy8sLkuBlAA2/MTCwAACI8rp5a9/ZdgAAAABJRU5ErkJggg==');
-  background-repeat: repeat-x;
-  background-size: 9px 100%;
-  box-sizing: border-box;
-}
-
-.slider__link {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  width: 140px;
+  padding: 10px;
+  padding-top: 15px;
+  margin-right: 18px;
+  margin-bottom: 15px;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAESCAYAAAFY8M9qAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAbZJREFUeNpiYIACxv9AAGIwwURGGVgZjEDMBWIABBAIsTCAgo0JrmCQEkA3/gAIIBCDGxrJgvDYRvHaKGcwcr4ABBAoxTED8X/GJ0+erHkPBKOZdZRBXQbDtm3b/Hl4ePgAAogBmti4Tp06NQda1LEw3L59u/c/EtiwYUMrShmCNRWPCo4KjgqOCo4KEi84ZcoUWyT+V0ZGRgGAAGKENjuZoYJ/QQz2trY2cWVlZcazZ8/+Y4iJiZGCls1/ra2tRdAL57/otjEzEXTPqMCowKjAqMCowKjAqMCoAN0Ffv36dQ3GWbVqVTWI5gUKvr5x48ZMIJsfIMAYodpgjSMQ/RPUNgKNloBaPSAapIANiDmys7PF3r17txHYMvr+4MGDBb6+vjzQHi4HQ2BgoNi9e/fm/scEf48cOdKrrq4uibXHiwb+MDEQBizEKGIYVTSqaFTRqKJRRaOKRhWNKhpVNKpoVNGoolFFo4pGFY0qGlU0qoimin7//n0aj/zrefPmdYEYXIsWLXL99evXA6RBsy8nT56cBpTjBmJhkCJWKEfw2rVrsR8+fJjFy8sLkuBlAA2/MTCwAACI8rp5a9/ZdgAAAABJRU5ErkJggg==');
+  background-repeat: repeat-x;
+  background-size: 9px 100%;
+
+  &:nth-child(6n) {
+    margin-right: 0;
+  }
+}
+
+.product__link {
+  display: block;
   width: 100%;
-  height: 100%;
-  padding: 20px;
   text-decoration: none;
   
   &:hover,
   &:active {
-    .slider__title span {
+    .product__title span {
       border-bottom: 1px dashed #836f5d;
       .transition();
     }
-    .slider__img img {
+    .product__img img {
       transform: scale(1.02);
       .transition();
     }
   }
 }
 
-.slider__img {
+.product__img {
   width: 100%;
-  height: 135px;
+  height: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -75,14 +58,17 @@
   }
 }
 
-.slider__info {
-  flex-grow: 1;
+.product__info {
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin-top: auto;
 }
 
-.slider__title {
+.product__title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
   color: #836f5d;
   line-height: 1.2;
   
@@ -92,9 +78,27 @@
   }
 }
 
-.slider__price {
-  margin-top: auto;
-  margin-bottom: 0;
+.product__price {
+  margin-top: 0;
+  margin-bottom: 10px;
   color: @green;
   font-size: 19px;
+}
+
+.product__sale {
+  font-weight: 400;
+  margin-right: 6px;
+  font-size: 14px;
+  color: #aa3739;
+  text-decoration: line-through;
+}
+
+.product__btn {
+  width: 100%;
+  height: 36px;
+  padding-right: 15px;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAJCAYAAAARml2dAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAENJREFUeNpi+P///0MgNgRiBmQMIkDgKxBHYJMAgX9A3AHEzOgSMLAFiPkZ/4OlMcAmbDq2AbEAQTuwuuoRNn8ABBgACkurbGSbHfgAAAAASUVORK5CYII=');
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 6px 9px;
 }
