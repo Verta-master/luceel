@@ -44,3 +44,52 @@
 .content__small {
   font-size: 10px;
 }
+
+.content__title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: @green;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.content__menu {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  color: @green;
+  font-size: 19px;
+  
+  p {
+    margin-right: 20px;
+  }
+  
+  span {
+    color: @red;
+    font-weight: 500;
+  }
+}
+
+.content__cabinet {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.content__btn {
+  padding: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  text-transform: none;
+  font-weight: 400;
+  
+  &--active {
+    pointer-events: none;
+    color: @green;
+    background-color: #fff;
+  }
+}
