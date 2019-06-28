@@ -397,6 +397,7 @@ textarea {
 body {
   width: 100%;
   max-width: 100%;
+  min-width: 350px;
   font-family: "PF Bulletin Sans Pro", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.42857143;
@@ -1004,6 +1005,10 @@ button {
   background-repeat: no-repeat;
   background-position: right 20px center;
   background-size: 6px 9px;
+}
+.form__btn-quick--small {
+  width: 160px;
+  margin-right: 20px;
 }
 .form--login .form__field {
   width: 180px;
@@ -2217,6 +2222,7 @@ a.breadcrumbs__link:active::after {
   position: relative;
   display: block;
   width: 100%;
+  max-height: 100%;
   margin-bottom: 20px;
   padding: 10px;
   text-align: center;
@@ -2285,6 +2291,8 @@ a.breadcrumbs__link:active::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -2295,9 +2303,7 @@ a.breadcrumbs__link:active::after {
 }
 .card__line .cart__value-wrap {
   margin-right: 20px;
-}
-.card__line .form__btn-quick {
-  margin-top: 0;
+  margin-top: 20px;
 }
 .tabs__title {
   margin: 0;
@@ -2880,7 +2886,7 @@ a.breadcrumbs__link:active::after {
   .header__cart-link {
     position: absolute;
     top: 10px;
-    right: 200px;
+    left: 65px;
     display: block;
     width: 40px;
     height: 34px;
@@ -3126,5 +3132,8 @@ a.breadcrumbs__link:active::after {
   }
   .product__btn--wide {
     height: 50px;
+  }
+  .header__item a {
+    padding: 5px 10px;
   }
 }
